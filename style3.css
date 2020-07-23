@@ -1,0 +1,183 @@
+
+/* ---------------------------------------------------
+    BASIC STYLE
+----------------------------------------------------- */
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+h5{
+    color: #fafafa;
+    font-size: 10;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    TOP BAR
+----------------------------------------------------- */
+
+header {
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  position: relative;
+}
+
+.navbar {
+    height: 115px;
+    width: auto;
+    margin-left:200px;
+    background-color: rgba(72, 72, 72, 1.0);
+    text-align: center;
+}
+
+.nav{
+    position: absolute;
+    right: 0px;
+    width: 950px;
+    height: 50px;
+
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.nav-item {
+  background: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 50px;
+	visibility: hidden;
+    z-index: 1;
+    background-color: rgba(72, 72, 72, 1.0);
+    list-style: outside none none !important;
+}
+
+li:hover ul#submenu {
+	opacity: 1;
+	top: 50px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+
+
+#submenu a:hover {
+	background: tomato;
+}
+#submenu a {
+    background-color: rgba(72, 72, 72, 1.0);
+    color: #fafafa;
+}
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 200px);
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+#content.active {
+    width: 100%;
+}
+
+
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    margin-left: 50px;
+    border-left: 5px solid tomato;
+    display: table;
+    font-size: 90%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+    position: fixed;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+#toc_container a {
+    color:  #999;
+}
+
+/* ---------------------------------------------------
+    FOOTER STYLE
+----------------------------------------------------- */
+
+.footer {
+	background: #333;
+	color: #fff;
+	padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 50;
+    right: 0;
+  }
+  
+.footer .social [class^="icon-"] {
+display: inline-block;
+color: #333;
+text-decoration: none;
+font-size: 30px;
+padding: 10px;
+background: white;
+border-radius: 50%;  /*lo hace redondito*/
+width: 50px;
+height: 50px;
+line-height: 40px;
+margin: 0 10px;
+}
