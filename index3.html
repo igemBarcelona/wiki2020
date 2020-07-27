@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style3.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
+   
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -22,11 +20,13 @@
 </head>
 
 
-<body>
-  <header>
+
+<header>
         <!-- Page Content  -->
 
           <!-- Barra de navegación de arriba -->
+          <img src="img/PropostaAndreu1.png" alt="logo" class="logo">
+          
             <nav class="navbar navbar-expand-xl navbar-dark ">
                 <div class="container-fluid">
 
@@ -63,46 +63,64 @@
                     </div>
                 </div>
             </nav>
-    </header>
+</header>
 
 
 
 
-
+<body>
     <div id="toc_container">
         <p class="toc_title">What´s on this page</p>
         <ul class="toc_list">
-          <li><a href="#First_Point_Header">1 First Point Header</a>
+          <li><a href="#intro">1 Introduction</a>
           <ul>
-            <li><a href="#First_Sub_Point_1">1.1 First Sub Point 1</a></li>
-            <li><a href="#First_Sub_Point_2">1.2 First Sub Point 2</a></li>
+            <li><a href="#sub_intro1">1.1 Sub Intro 1</a></li>
+            <li><a href="#sub_intro2">1.2 Sub Intro 2</a></li>
           </ul>
         </li>
-        <li><a href="#Second_Point_Header">2 Second Point Header</a></li>
-        <li><a href="#Third_Point_Header">3 Third Point Header</a></li>
+        <li><a href="#Design">2 Design</a></li>
+        <li><a href="#Results">3 Results</a></li>
         </ul>
+    </div>
+
+    <div class="colors">
+        <div class="color1"></div>
+    </div>
+
+    <div class="colors">
+        <div class="color2"></div>
+    </div>
+
+    <div class="colors">
+        <div class="color3"></div>
+    </div>
+
+    <div class="colors">
+        <div class="color4"></div>
+    </div>
+
+    <div class="colors">
+        <div class="color5"></div>
     </div>
           
     <div id = "content">
 
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+        <h2 id="intro">Introduction</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <div class="line"></div>
 
-        <h2>Lorem Ipsum Dolor</h2>
+        <h2 id="Design">Design</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <div class="line"></div>
 
-        <h2>Lorem Ipsum Dolor</h2>
+        <h2 id="Results">Results</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
         <div class="line"></div>
 
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
 
 
@@ -132,12 +150,22 @@
     <footer class="footer">
         <div class="contenedor">
           <div class="social">
-            <a style="display: inline-block; height: 50px" href="https://www.facebook.com/igembarcelona/" class="icon-facebook"><embed class="social-svg" src="images/instagram.png" alt=""></a>
-            <a href="https://twitter.com/igembarcelona?lang=gl" class="icon-twitter"></a>
-            <a href="#" class="icon-gplus"></a>
+            <p class="subapart2" style="font-weight: 800;">Follow us at:</p>
+            <a style="display: inline-block; height: 50px" href="https://www.instagram.com/igembarcelona/" class="icon-instagram"><embed class="social-svg" src="img/instagram.png" alt="" width="30" height="30"></a>
+            <a href="https://twitter.com/igembarcelona?lang=gl" class="icon-twitter"><embed class="social-svg" src="img/twitter.png" alt="" width="30" height="30"></a>
+            <a href="https://www.twitch.tv/igem_upf" class="icon-twitch"><embed class="social-svg" src="img/twitch.png" alt="" width="30" height="30"></a>
             
           </div>
           <p class="copy">&copy; iGEM UPF_Barcelona</p>
+
+          <br>
+          <div>
+            <p class="subapart2" style="font-weight: 800;">Contact us:</p>
+            <p>igem [at] upf [dot] edu</p>
+            <p> PRBB Building</p>
+            <p>Doctor Aiguader 88, 08003 Barcelona (Spain)</p>
+          </div>
+
         </div>
       </footer>
 
