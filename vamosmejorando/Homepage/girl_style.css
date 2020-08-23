@@ -40,6 +40,12 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  #title {
+    font-size: 20px;
+  }
+}
+
 
 
 .container{
@@ -62,6 +68,24 @@
   left: 0;
   top:10vmin;
   transform:scale(0.4);
+}
+
+@media screen and (max-width: 1024px) {
+  .girl{
+    transform:scale(0.3);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .girl{
+    transform:scale(0.2);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .girl{
+    transform:scale(0.1);
+  }
 }
 
 .logo{
@@ -498,4 +522,24 @@
 
 .text{
   background-color: white;
+}
+
+
+.image{
+  width:100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#description-title{
+  color: white;
+  z-index: 100;
+  font-style: oblique;
+  font-family: Lato;
+  font-size: 160px;
+  font-weight: bold;
+  position: relative;
+  top: 0px;
+  left: 110px;
 }
