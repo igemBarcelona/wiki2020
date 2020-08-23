@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 480px) {
   #title {
-    font-size: 20px;
+    font-size: 40px;
     position: sticky;
   }
 }
@@ -87,7 +87,7 @@
 
 @media screen and (max-width: 480px) {
   .girl{
-    transform:scale(0.1);
+    transform:scale(0.2);
   }
 }
 
