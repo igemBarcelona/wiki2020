@@ -31,18 +31,21 @@
 @media screen and (max-width: 1024px) {
   #title {
     font-size: 80px;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 720px) {
   #title {
     font-size: 50px;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 480px) {
   #title {
     font-size: 20px;
+    position: sticky;
   }
 }
 
