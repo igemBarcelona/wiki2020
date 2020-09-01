@@ -453,7 +453,7 @@ img  {
     width: 50%;
   }
 
-#homepage {
+.homepage-image img {
     width: 100%;
 
 }
