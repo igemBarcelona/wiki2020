@@ -1,5 +1,30 @@
 
 
+
+:root {
+    margin: 0;
+    padding: 0;
+
+    --body-fonts: "Helvetica", "Arial", sans-serif;
+    --line-height: 1.5;
+
+    /* Our palette */
+    --dark-blue: #003f5c;
+    --blue-purple: #58508d;
+    --purple: #bc5090;
+    --pink: #ff6361;
+    --yellow: #ffa600;
+
+
+    /* Para utilizarlo 
+    p {
+        color: var(--primary-color);
+        font-family: var(--body-fonts);
+        line-height: var(--line-height);
+    } */
+}
+
+
 /* MASTHEAD */
 
 header.masthead {
@@ -90,6 +115,7 @@ header.masthead .masthead-heading {
       background-color: transparent;
       transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
+
    
     #mainNav.navbar-shrink {
       padding-top: 1rem;
@@ -418,4 +444,16 @@ header.masthead .masthead-heading {
         width: 100%;
         margin-bottom: 30px;
     }
+}
+
+img  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#homepage {
+    width: 100%;
+
 }
