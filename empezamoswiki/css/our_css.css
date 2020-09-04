@@ -14,6 +14,8 @@
     --purple: #bc5090;
     --pink: #ff6361;
     --yellow: #ffa600;
+    --dark-gray: #313335;
+    --light-gray: #dfe3e6;
 
 
     /* Para utilizarlo 
@@ -86,25 +88,25 @@ header.masthead .masthead-heading {
     font-size: 0.75rem;
     color: #fff;
     text-transform: uppercase;
-    background-color: #fed136;
+    background-color: var(--yellow);
     border: 0;
 }
 #mainNav .navbar-brand {
     padding: 0rem;
-    margin: 0;
+    margin: 0rem;
 }
 #mainNav .navbar-brand img {
     height: 60px;
-    width: 100px;
+    width: 250px;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #fff;
     letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: var(--yellow);
 }
   
 @media (min-width: 992px) {
@@ -120,16 +122,16 @@ header.masthead .masthead-heading {
     #mainNav.navbar-shrink {
       padding-top: 1rem;
       padding-bottom: 1rem;
-      background-color: #212529;
+      background-color: var(--dark-gray);
     }
    
     #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
       height: 60px;
-      width: 100px;
+      width: 250px;
     }
     #mainNav .navbar-nav .nav-item {
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
     #mainNav .navbar-nav .nav-item:last-child {
       margin-right: 0;
@@ -141,7 +143,7 @@ header.masthead .masthead-heading {
 /* PAGE-SECTION */
 
 .page-section {
-    padding: 6rem 0;
+    padding: 6rem 6rem;
 }
 .page-section h2.section-heading {
     font-size: 2.5rem;
@@ -218,7 +220,7 @@ header.masthead .masthead-heading {
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: var(--yellow);
 }
 .timeline > li .timeline-image h4 {
     font-size: 10px;
@@ -360,7 +362,7 @@ header.masthead .masthead-heading {
     overflow: hidden;
     padding: 50px 0;
     box-sizing: border-box;
-    background-color: #18181a;
+    background-color: var(--dark-gray);
 }
 
 .inner_footer{
@@ -446,6 +448,50 @@ header.masthead .masthead-heading {
     }
 }
 
+
+/* MASTHEAD 2 */
+
+header.masthead2 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 4em;
+    text-align: center;
+    color: #fff;
+    background-image: url("../img/bg_equations3.jpeg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+header.masthead2 .masthead-heading2 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+  
+@media (min-width: 768px) {
+    header.masthead2 {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+    header.masthead2 .masthead-heading2 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+
+
+/* COSAS VARIAS */
+
 img  {
     display: block;
     margin-left: auto;
@@ -453,3 +499,14 @@ img  {
     width: 100%;
   }
 
+.page-section h1 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+
+.page-section .spacer {
+    font-size: 0; 
+    height: 50px;
+    line-height: 0;
+}
