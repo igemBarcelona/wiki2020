@@ -9,14 +9,17 @@
     --line-height: 1.5;
 
     /* Our palette */
-    --dark-blue: #003f5c;
+    --dark-blue: #34647a;
     --blue-purple: #58508d;
     --purple: #bc5090;
     --pink: #ff6361;
-    --yellow: #ffa600;
+    --yellow2: #ffa600;
     --dark-gray: #313335;
     --light-gray: #dfe3e6;
 
+    --logo-yellow: #ffcc00ff;
+    --yellow: #ffcc00ff;
+    --logo-blue: #00aad4ff;
 
     /* Para utilizarlo 
     p {
@@ -96,8 +99,8 @@ header.masthead .masthead-heading {
     margin: 0rem;
 }
 #mainNav .navbar-brand img {
-    height: 60px;
-    width: 250px;
+    height: 40px;
+    width: 200px;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -138,7 +141,35 @@ header.masthead .masthead-heading {
     }
 }
 
+/* Table of contents */
 
+.toc_container {
+    background: white none repeat scroll 0 0;
+    margin-left: 50px;
+    border-left: 5px solid var(--dark-blue);
+    display: table;
+    font-size: 90%;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 1em;
+    padding: 20px;
+    width: 18%;
+    position: fixed;
+    bottom: 0;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.toc_container li, .toc_container ul, .toc_container ul li{
+    list-style: outside none none !important;
+}
+
+.toc_container a {
+    color:  #999;
+}
 
 /* PAGE-SECTION */
 
@@ -449,22 +480,20 @@ header.masthead .masthead-heading {
 }
 
 
-/* MASTHEAD 2 */
+/* MASTHEAD DESCRIPTION */
 
 header.masthead2 {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    margin-top: 4em;
+    margin-top: 6em;
     text-align: center;
     color: #fff;
-    background-image: url("../img/bg_equations3.jpeg");
-    opacity: 0.8;
+    background-image:  url("../img/description5.png");
+    opacity: 1;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-
 }
 
 header.masthead2 .masthead-heading2 {
@@ -489,6 +518,50 @@ header.masthead2 .masthead-heading2 {
 }
 
 
+/* MASTHEAD HUMAN PRACTICES */
+
+header.masthead3 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 5.5em;
+    background-image: url("../img/humanpractices.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+  
+@media (min-width: 768px) {
+    header.masthead3 {
+      padding-top: 17rem;
+      padding-bottom: 17rem;     
+    }
+}
+
+
+/* MASTHEAD TEAM */
+
+header.masthead4 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 5.5em;
+    background-image: url("../img/team2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+  
+@media (min-width: 768px) {
+    header.masthead4 {
+      padding-top: 17rem;
+      padding-bottom: 17rem;     
+    }
+}
+
+
 
 /* COSAS VARIAS */
 
@@ -502,6 +575,8 @@ img  {
 .page-section h1 {
     text-transform: uppercase;
     padding-bottom: 1rem;
+    color: var(--logo-blue);
+    font-size: 2rem;
 }
 
 
@@ -509,4 +584,22 @@ img  {
     font-size: 0; 
     height: 50px;
     line-height: 0;
+}
+
+
+.card-deck {
+    background-color: var(--light-gray);
+}
+
+#useful-links {
+    background-color: var(--light-gray);
+}
+
+#page-top1 {
+    background-color: var(--light-gray);
+}
+
+.page-section1 {
+    background-color: white;
+    margin: 3rem 3rem 3rem 20rem;
 }

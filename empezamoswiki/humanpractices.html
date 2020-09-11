@@ -22,9 +22,9 @@
     </head>
     <body id="page-top">
        <!-- Navigation-->
-       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="" /></a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
@@ -96,9 +96,9 @@
     </nav>
 
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead3">
             <div class="container">
-                <div class="masthead-heading text-uppercase">Human Practices</div>
+                <div class="masthead-heading3 text-uppercase"></div>
             </div>
         </header>
 
@@ -106,16 +106,49 @@
            <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h2 class="section-heading text-uppercase">Timeline</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/prueba.png" alt="" data-toggle="modal" data-target="#myModal"></div>
+                        
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h2 class="modal-title">Needs finding survey</h2>
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                    </div>
+
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <img src="img/survey.jpg" style="height:250px;">
+
+                                        <br>
+                                    
+                                        <p>We carried out a survey with the aim of identifying the main challenges faced by a researcher or a laboratory technician in their daily laboratory procedures and, consequently, to propose a synthetic biology approach to face those challenges.</p>
+                                        <p>Output: some of the annotated ideas were: improvement of the laboratory equipment performance, optimization of cloning strategies or other time-consuming strategies and the development of fully automated procedures.</p>
+                                        <p>Adjustment: even though some of the previous ideas were considered, we were balancing other projects with huge potential as well. Nevertheless, the identified daily laboratory challenges can be a great starting point for future iGEM team projects.</p>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                        
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>April 2020</h4>
+                                <h4 class="subheading">Needs finding survey</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                         </div>
@@ -218,5 +251,7 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+
     </body>
 </html>

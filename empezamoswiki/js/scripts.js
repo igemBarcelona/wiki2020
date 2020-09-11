@@ -41,6 +41,8 @@
         offset: 74,
     });
 
+
+
     // Collapse Navbar
     var navbarCollapse = function () {
         if ($("#mainNav").offset().top > 100) {
@@ -53,4 +55,24 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // Table of contents
+    document.getElementById("description_container").style.display = "none"
+    $(window).scroll(function(){
+        if($(window).scrollTop()<300){ // Change depending on intro photo length
+            $("#description_container").fadeOut();
+        }else if($(window).scrollTop()>1700){ // Change depending on page length
+            $("#description_container").fadeOut();
+        }else{
+            $("#description_container").fadeIn();
+        }
+    
+    });
+
+
+    // Make anchor link go some pixels above where it's linked to
+    window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 110);
+    });
+
 })(jQuery); // End of use strict

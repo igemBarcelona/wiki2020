@@ -20,11 +20,14 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
-    <body id="page-top">
+
+
+
+    <body id="page-top" style="background-color: var(--light-gray)">
        <!-- Navigation-->
        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="" /></a>
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
@@ -95,59 +98,67 @@
         </div>
     </nav>
         
+
+    
     <!-- Masthead-->
-    <header class="masthead2">
-        <div class="container">
-            <div class="masthead-heading2 text-uppercase">Description</div>
-            
-        </div>
+    <header class="masthead2 col-md-10" style="margin-left: auto; margin-right: auto;">
+
+            <div class="masthead-heading2 text-uppercase"></div>
+
     </header>
 
 
+
+
     <!-- Content -->
-      <section class="page-section">
-        <h1>Background</h1>
+
+    <div class="toc_container" id="description_container">
+        <p class="toc_title">What's on this page</p>
+        <ul class="toc_list">
+          <li><a href="#Background">1 Background</a>
+          <ul>
+            <li><a href="#feedback">1.1 Thyrotropic feedback control</a></li>
+            <li><a href="#biomarker">1.2 Triiodothyronine as a skin biomarker</a></li>
+          </ul>
+        </li>
+        <li><a href="#approach">2 Approach</a></li>
+        <li><a href="#inspiration">3 Inspiration</a></li>
+        <li><a href="#ref">4 References</a></li>
+        </ul>
+    </div>
+
+
+      <section class="page-section" style="background-color: white; margin: 3rem 3rem 3rem 20rem">
+        <h1 id="Background">Background</h1>
         <p>Thyroid disease is a global health problem that can hugely affect well-being, since thyroid hormones are essential for growth or regulation of energy metabolism, among others [1]. Although thyroid dysfunction is easily identifiable and treatable, dosage of the treatment at first stages is highly unspecific and patients must receive different amounts of drugs until their hormone level is stabilized [2].</p>
 
-        <h4>Thyrotropic feedback control</h4>
+        <h4 id="feedback">Thyrotropic feedback control</h4>
         <p>Thyroid disease is hampered by abnormalities in the <b>hypothalamic-pituitary-thyroid</b> axis, leading to conditions as hypothyroidism or hyperthyroidism. The hypothalamic-pituitary-thyroid axis is also known as thyroid homeostasis or thyrotropic feedback control, as thyroid hormone release is regulated by a negative feedback control (see Figure 1) [3].</p>
 
-        <h4>Triiodothyronine as a skin biomarker</h4>
+        <h4 id="biomarker">Triiodothyronine as a skin biomarker</h4>
         <p>Skin is the targeted organ of numerous hormones, so it is not surprising that these hormones or its derivatives are found on skin. Regarding thyroid hormones, triiodothyronine (T3) has been proven to be found on sweat and, consequently, on skin [4].</p>
 
         <div class="spacer"></div>
 
-        <h1>Approach</h1>
+        <h1 id="approach">Approach</h1>
         <p>Based on past approaches to external hormone regulation as the insulin pump, <b>HORMONIC</b> seeks to offer an artificial thyroid homeostasis, sensing the systemic amount of thyroid hormone and regulating as the thyrotropic feedback control would do [5]. Gathering recent advances in synthetic biology, control systems and electronics, we attempt to offer a <b>patient-specific</b> solution to the determination of dosage administration of pharmacs.</p>
-        <p><b>HORMINIC</b>> aims to quantify and release the needed amount of a drug so the thyroid homeostasis of the patient is kept in a healthy level through time. For that, our proposal is divided in three stages: the sensing part, which consists of an engineered <i>E. Coli</i> able detect T3 at the skin level and give a fluorescent response proportional to the detected T3; the controller, which is compound by an ARDUINO that has already implemented the response that has to be given to the sensed T3, and the releasing part, which in our case is a peristaltic pump that will answer to the guides of the controller.</p>
+        <p><b>HORMONIC</b> aims to quantify and release the needed amount of a drug so the thyroid homeostasis of the patient is kept in a healthy level through time. For that, our proposal is divided in three stages: the sensing part, which consists of an engineered <i>E. Coli</i> able detect T3 at the skin level and give a fluorescent response proportional to the detected T3; the controller, which is compound by an ARDUINO that has already implemented the response that has to be given to the sensed T3, and the releasing part, which in our case is a peristaltic pump that will answer to the guides of the controller.</p>
 
         <div class="spacer"></div>
 
-        <h1>Inspiration</h1>
+        <h1 id="inspiration">Inspiration</h1>
         <p> The problems caused by the initial undefinition of a clear dosage for thyroid dysfunction seem to be a hot topic among affected people. Just by asking some familiars and acquaintances we realized about the relevance of this issue. </p>
-        <p>During the brainstorming sessions, we tackled concerns of our environment and tried to propose solutions involving synthetic biology. When the final decision needed to be given, we finally balanced our preferences towards <b>HORMONIC</b>> because a great part of our team is coursing Biomedical Engineering, and our acquired knowledges seemed more useful on a therapeutic environment.</p>
+        <p>During the brainstorming sessions, we tackled concerns of our environment and tried to propose solutions involving synthetic biology. When the final decision needed to be given, we finally balanced our preferences towards <b>HORMONIC</b> because a great part of our team is coursing Biomedical Engineering, and our acquired knowledges seemed more useful on a therapeutic environment.</p>
 
         <div class="spacer"></div>
     
-        <h2>References</h2>
+        <h2 id="ref">References</h2>
         <p class="references">[1] Taylor, P. N., Albrecht, D., Scholz, A., Gutierrez-Buey, G., Lazarus, J. H., Dayan, C. M., & Okosieme, O. E. (2018). Global epidemiology of hyperthyroidism and hypothyroidism. Nature Reviews Endocrinology, 14(5), 301–316. doi:10.1038/nrendo.2018.18 </p>
         <p class="references">[2]</p>
         <p class="references">[3] Dietrich, J. W., Landgrafe, G., & Fotiadou, E. H. (2012). TSH and Thyrotropic Agonists: Key Actors in Thyroid Homeostasis. Journal of Thyroid Research, 2012, 1–29. doi:10.1155/2012/351864</p>
         <p class="references">[4]</p>
         <p class="references">[5]</p>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
+  
     </section>
 
 
@@ -203,5 +214,5 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    </body>
+</body>
 </html>
