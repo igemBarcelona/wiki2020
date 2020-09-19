@@ -9,7 +9,7 @@
         <title>UPF_Barcelona</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -18,8 +18,11 @@
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
+         <!-- AOS animations -->
+         <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     </head>
+
+    
     <body id="page-top">
        <!-- Navigation-->
        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
@@ -96,101 +99,80 @@
     </nav>
 
         <!-- Masthead-->
-        <header class="masthead3">
-            <div class="container">
-                <div class="masthead-heading3 text-uppercase"></div>
-            </div>
-        </header>
+        <div data-aos="zoom-in" data-aos-duration="2000">
+            <header class="masthead3">
+                <div class="container">
+                    <div class="masthead-heading3 text-uppercase"></div>
+                </div>
+            </header>
+        </div>
 
-           <!-- About-->
+           <!-- Timeline -->
+           
+
            <section class="page-section" id="about">
+                <div class="abstract">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i> Human Practices is the study of how your work affects the world, and how the world affects your work. <i class="fa fa-quote-right" aria-hidden="true"></i> 
+                    <p>- Peter Carr, Director of Judging</p>
+                </div>
             <div class="container">
                 <div class="text-center">
+                    <br>
                     <h2 class="section-heading text-uppercase">Timeline</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Enjoy every stop on our journey to make HORMONIC a socially responsible, sustainable, safe and inclusive project.</h3>
                 </div>
                 <ul class="timeline">
+                    
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/prueba.png" alt="" data-toggle="modal" data-target="#myModal"></div>
-                        
-                            <!-- The Modal -->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                <div class="modal-content">
-                                
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                    <h2 class="modal-title">Needs finding survey</h2>
-                                    <button type="button" class="close" data-dismiss="modal">×</button>
-                                    </div>
-
-
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <img src="img/survey.jpg" style="height:250px;">
-
-                                        <br>
-                                    
-                                        <p>We carried out a survey with the aim of identifying the main challenges faced by a researcher or a laboratory technician in their daily laboratory procedures and, consequently, to propose a synthetic biology approach to face those challenges.</p>
-                                        <p>Output: some of the annotated ideas were: improvement of the laboratory equipment performance, optimization of cloning strategies or other time-consuming strategies and the development of fully automated procedures.</p>
-                                        <p>Adjustment: even though some of the previous ideas were considered, we were balancing other projects with huge potential as well. Nevertheless, the identified daily laboratory challenges can be a great starting point for future iGEM team projects.</p>
-                                    </div>
-                                    
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                    </div>
-                                    
-                                </div>
-                                </div>
-                            </div>
-                        
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/survey2.png" alt="" data-toggle="modal" data-target="#modal1"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>April 2020</h4>
+                                <h4 class="timeline-month" style="color: #00aad4ff;">April 2020</h4>
                                 <h4 class="subheading">Needs finding survey</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">Searching for challenges that bother researchers in their daily laboratory procedures. </p></div>
                         </div>
                     </li>
+                    
+
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/brainstorming2.png" alt="" data-toggle="modal" data-target="#modal2"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                                <h4 class="subheading">First Brainstorming sessions</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">Letting our mind think of any crazy and ambitious idea to help solve a problem using synthetic biology tools. </p></div>
                         </div>
                     </li>
+                    
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/man2.png" alt="" data-toggle="modal" data-target="#modal3"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                                <h4 class="subheading">Marc Güell Cargol</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">Researcher in the Biomedical Research Park of Barcelona</p></div>
                         </div>
                     </li>
+                    
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal4"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
+                                <h4 class="timeline-month" style="color: #00aad4ff;">May 2020</h4>
+                                <h4 class="subheading">Final brainstorming session with advisors</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">May 17, each team member voted for one of the candidate projects and the winner was...</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4>
-                                Be Part
+                            <h4 style="color:black;">
+                                Giant
                                 <br />
-                                Of Our
+                                Jamboree
                                 <br />
-                                Story!
+                                2020!
                             </h4>
                         </div>
                     </li>
@@ -199,7 +181,124 @@
         </section>
 
 
-              <!-- Footer -->
+<!-- MODALS -->
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title">Needs finding survey</h2>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <div class="modal-body">
+                <img src="img/human_practices/survey.jpg" class="center" style="height:250px;">
+                <br>
+                <p>We carried out a survey with the aim of identifying the main challenges faced by a researcher or a laboratory technician in their daily laboratory procedures and, consequently, to propose a synthetic biology approach to face those challenges.</p>
+                <p><b>Output:</b> some of the annotated ideas were: improvement of the laboratory equipment performance, optimization of cloning strategies or other time-consuming strategies and the development of fully automated procedures.</p>
+                <p><b>Adjustment:</b> even though some of the previous ideas were considered, we were balancing other projects with huge potential as well. Nevertheless, the identified daily laboratory challenges can be a great starting point for future iGEM team projects.</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>    
+        </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2">
+        <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title">First brainstorming sessions</h2>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+
+            <div class="modal-body">
+                <img src="img/human_practices/team.png" class="center" style="width:450px;">
+                <br>
+                <p>We went through several brainstorming sessions where we discussed local problems that affected real people and real-life situations. Needs finding is a long and profound process. During these sessions we talked with our advisors as well as other researchers in our university.</p>
+                <p>Some of the discussed topics were:</p>
+                <dl class="row">
+                    <dt class="col-sm-4">Lindane detection with a biosensor</dt>
+                    <dd class="col-sm-8">A bioremediation approach to detect lindane insecticide levels in water so as to know if it is safe to be consumed by humans.</dd>
+                    <dt class="col-sm-4">Non-invasive early diagnosis of melanoma</dt>
+                    <dd class="col-sm-8">An approach contemplating the design of a microneedle array capable of detecting specific miRNA overexpressed in melanomas in the skin interstitial liquid.</dd>
+                    <dt class="col-sm-4">Phtalates detection with a biosensor</dt>
+                    <dd class="col-sm-8">Phtalates is a composite present in the air near industrial areas which is potentially damaging for the human body. The aim of this approach was to degrade phtalates into some innocuous molecules.</dd>
+                </dl>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>    
+        </div>
+        </div>
+    </div>
+
+
+        <!-- Modal 3 -->
+        <div class="modal" id="modal3">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Marc Güell Cargol</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/marc_guell.png" class="center" style="width:250px;">
+                    <br>
+                    <p>A researcher, the head of Translational Synthetic Biology laboratory in the Biomedical Research Park of Barcelona. He has been working on a variety of areas including mammalian genome editing, gene therapy and human skin microbiome engineering.</p>
+                    <p><b>Input:</b> He gave us some of the results of a study they did related to skin microbiome and Cutibacterium acnes bacteria. These results showed a list of some skin biomarkers, among them T3 hormone!</p>
+                    <p><b>Output:</b> From this, we continued investigating and came up with the idea of what our project is right now, but still there were many unsolved questions and some gaps we needed to fill. We could say that our first steps of our final project started here. </p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Modal 4 -->
+        <div class="modal" id="modal4">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Final brainstorming session with advisors</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/final_brainstorming.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>On May 17th we had the final elections to decide the project we wanted to dedicate the whole summer to. We discussed the feasibility, advantages, disadvantages, limitations, applications, what topics would we work on and learn.</p>
+                    <p><b>Output:</b> We finally balanced our preferences towards Hormonic because currently there is not much research on thyroid system problems, there was a society need and because our group, formed by biomedical engineering students, wanted to develop an innovative and groundbreaking approach to solve this problem which unfortunately is quite prevalent nowadays.
+                    </p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- FOOTER -->
 
       <div class="footer">
         <div class="inner_footer">
@@ -251,6 +350,11 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- AOS animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>   
+            AOS.init(); 
+        </script>
         
 
     </body>

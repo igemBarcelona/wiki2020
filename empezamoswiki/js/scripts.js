@@ -59,9 +59,9 @@
     // Table of contents
     document.getElementById("description_container").style.display = "none"
     $(window).scroll(function(){
-        if($(window).scrollTop()<300){ // Change depending on intro photo length
+        if($(window).scrollTop()<600){ // Change depending on intro photo length
             $("#description_container").fadeOut();
-        }else if($(window).scrollTop()>1700){ // Change depending on page length
+        }else if($(window).scrollTop()>2700){ // Change depending on page length
             $("#description_container").fadeOut();
         }else{
             $("#description_container").fadeIn();

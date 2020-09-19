@@ -21,6 +21,10 @@
     --yellow: #ffcc00ff;
     --logo-blue: #00aad4ff;
 
+    --rosita: #fd6c6c8f;
+
+    --green2:  rgb(86, 173, 119);
+
     /* Para utilizarlo 
     p {
         color: var(--primary-color);
@@ -99,12 +103,12 @@ header.masthead .masthead-heading {
     margin: 0rem;
 }
 #mainNav .navbar-brand img {
-    height: 40px;
+    height: 45px;
     width: 200px;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #fff;
     letter-spacing: 0.0625em;
 }
@@ -114,8 +118,8 @@ header.masthead .masthead-heading {
   
 @media (min-width: 992px) {
     #mainNav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding-top: 1rem; /* Aumentar el padding si queremos que la navbar sea más ancha */
+      padding-bottom: 1rem;
       border: none;
       background-color: transparent;
       transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -130,8 +134,8 @@ header.masthead .masthead-heading {
    
     #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-      height: 60px;
-      width: 250px;
+        height: 45px;
+        width: 200px;
     }
     #mainNav .navbar-nav .nav-item {
       margin-right: 0.5rem;
@@ -146,7 +150,7 @@ header.masthead .masthead-heading {
 .toc_container {
     background: white none repeat scroll 0 0;
     margin-left: 50px;
-    border-left: 5px solid var(--dark-blue);
+    border-left: 5px solid var(--logo-yellow);
     display: table;
     font-size: 90%;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -251,7 +255,7 @@ header.masthead .masthead-heading {
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: var(--yellow);
+    background-color: var(--light-gray);
 }
 .timeline > li .timeline-image h4 {
     font-size: 10px;
@@ -352,8 +356,8 @@ header.masthead .masthead-heading {
       padding: 0 20px 20px 100px;
     }
     .timeline > li .timeline-image {
-      width: 170px;
-      height: 170px;
+      width: 150px;
+      height: 150px;
       margin-left: -85px;
     }
     .timeline > li .timeline-image h4 {
@@ -362,7 +366,19 @@ header.masthead .masthead-heading {
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 0 100px 20px 20px;
     }
+    .timeline-month {
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+        color: var(--logo-blue);
+        font-size: 2.5rem;
+        font-family: 'Dosis';
+        font-weight: 600;
+    }
   }
+
+
+  /* TEAM */
+  
   .team-member {
     margin-bottom: 3rem;
     text-align: center;
@@ -432,8 +448,19 @@ header.masthead .masthead-heading {
     height: 60px;
 }
 
+.footer_third a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+
+.footer_third a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
 .inner_footer .footer_third h1{
-    font-family: 'arial';
     font-size: 22px;
     display: block;
     color: white;
@@ -443,7 +470,6 @@ header.masthead .masthead-heading {
 
 .inner_footer .footer_third a{
     display: inline-block;
-    font-family: 'arial';
     font-size: 18px;
     color: grey;
     font-weight: 200;
@@ -452,7 +478,6 @@ header.masthead .masthead-heading {
 }
 
 .inner_footer .footer_third li{
-    font-family: 'arial';
     padding: 0 5px;
     font-size: 20px;
     color: white;
@@ -460,7 +485,6 @@ header.masthead .masthead-heading {
 
 .inner_footer .footer_third span{
     color: grey;
-    font-family: 'arial';
     font-size: 18px;
     font-weight: 200;
     display: block;
@@ -523,7 +547,7 @@ header.masthead2 .masthead-heading2 {
 header.masthead3 {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    margin-top: 5.5em;
+    margin-top: 4.5em;
     background-image: url("../img/humanpractices.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -534,7 +558,7 @@ header.masthead3 {
   
 @media (min-width: 768px) {
     header.masthead3 {
-      padding-top: 17rem;
+      padding-top: 20rem;
       padding-bottom: 17rem;     
     }
 }
@@ -565,18 +589,21 @@ header.masthead4 {
 
 /* COSAS VARIAS */
 
-img  {
+.page-section #homepage  {  /* Imagen de la homepage */
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
+}
+
 
 .page-section h1 {
     text-transform: uppercase;
     padding-bottom: 1rem;
     color: var(--logo-blue);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Dosis';
+    font-weight: 600;
 }
 
 
@@ -587,12 +614,15 @@ img  {
 }
 
 
+
+/* HOMEPAGE: USEFUL LINKS */
+
 .card-deck {
-    background-color: var(--light-gray);
+    background-color: transparent;
 }
 
 #useful-links {
-    background-color: var(--light-gray);
+    background-color: var(--green2);
 }
 
 #page-top1 {
@@ -603,3 +633,74 @@ img  {
     background-color: white;
     margin: 3rem 3rem 3rem 20rem;
 }
+
+
+.fa-cogs:hover{
+    color: var(--logo-yellow) !important;
+    width: 130px;
+    height: 130px;
+ }
+
+ .fa-flask:hover{
+    color: var(--logo-yellow) !important;
+    width: 120px;
+    height: 120px;
+ }
+
+ .fa-microchip:hover{
+    color: var(--logo-yellow) !important;
+    width: 120px;
+    height: 120px;
+ }
+
+ .fa-chart-bar:hover{
+    color: var(--logo-yellow) !important;
+    width: 120px;
+    height: 120px;
+ }
+ 
+ .fa-lightbulb:hover{
+    color: var(--logo-yellow) !important;
+    width: 120px;
+    height: 120px;
+ }
+ 
+
+
+ /* DESCRIPTION PAGE: ABSTRACT */
+ 
+ .abstract {
+     background-color: var(--green2);
+     color: white;
+     padding: 2rem 7rem;
+     margin: 2rem 5rem;
+     font-family: 'Dosis';
+     font-size: 20px;
+ }
+
+
+ .abstract h1 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Dosis';
+    font-weight: 600;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+
+
+
+
+.timeline_icons:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }

@@ -8,17 +8,23 @@
         <title>UPF_Barcelona</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
+         <!-- AOS animations -->
+         <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     </head>
+
+
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -97,8 +103,8 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">A fully automatic feedback system towards hypothyroidism treatment</div>
-                <div class="masthead-heading text-uppercase">Hormonic</div>
+                <div class="masthead-subheading" data-aos="zoom-out" data-aos-duration="3000">A fully automatic feedback system towards hypothyroidism treatment</div>
+                <div class="masthead-heading text-uppercase" data-aos="zoom-out" data-aos-duration="3000">Hormonic</div>
             </div>
         </header>
 
@@ -118,39 +124,46 @@
        <section class="page-section" id="useful-links">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Useful links</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h2 style="color:white" class="section-heading text-uppercase">Useful links</h2>
+                <h3 style="color:white" class="section-subheading">Want to take a shortcut? Explore the four areas below. </h3>
             </div>
             <div class="card-deck row text-center">
                 <div class="card col-md-3">
                     <br>
                     <a href="description.html">
-                        <img src="img/icons/design.png" alt="..." style="width:100px;height:120px;">
+                        <i class="far fa-lightbulb fa-6x" style="color: #00aad4ff"></i>
                     </a>
                     <h4 class="my-3">Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Discover how Hormonic designed its experiments and the explanation of the engineering principles behind them.</p>
                 </div>
                 <div class="card col-md-3">
                     <br>
-                    <img src="img/icons/lab.png" class="card-img-top" alt="..." style="width:60px;height:120px;">
+                    <a href="description.html">
+                        <i class="fa fa-flask fa-6x" style="color: #00aad4ff"></i>
+                    </a>
                     <h4 class="my-3">Labwork</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Go deeper inside the experimental world of Hormonic. You will discover how inteins work and how can they transform a bacteria into a biosensor.</p>
                 </div>
                 <div class="card col-md-3">
                     <br>
-                    <img src="img/icons/hardware.png" class="card-img-top" alt="..." style="width:100px;height:100px;">
-                    <h4 class="my-3">Hardware</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="card col-md-3">
-                    <br>
-                    <img src="img/icons/model.png" class="card-img-top" alt="..." style="width:110px;height:100px;">
+                    <a href="description.html">
+                        <i class="far fa-chart-bar fa-6x" style="color: #00aad4ff"></i>
+                    </a>
                     <h4 class="my-3">Model</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">Thinking of translating the biological processes of Hormonic into some mathematical equations? Don´t hesitate to check this page! </p>
                 </div>
+                <div class="card col-md-3">
+                    <br>
+                    <a href="description.html">
+                        <i class="fa fa-cogs fa-6x" style="color: #00aad4ff"></i>
+                    </a>
+                    <h4 class="my-3">Hardware</h4>
+                    <p class="text-muted">Not enough? Learn about how to create a DIY turbidostat, an automated and continuous cell culture device. Here you will discover the electronics and the self-regulation system behind it.</p>
+                </div>
+
             </div>
         </div>
-        Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+       
     </section>
     
     
@@ -212,6 +225,11 @@
 
       <!-- Core theme JS-->
       <script src="js/scripts.js"></script>
+        <!-- AOS animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>   
+            AOS.init(); 
+        </script>
 
      </body>
 </html>

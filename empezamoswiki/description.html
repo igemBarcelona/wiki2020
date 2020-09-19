@@ -15,11 +15,17 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
+    
+        <!-- AOS animations -->
+        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+      
+      </head>
 
 
 
@@ -101,17 +107,20 @@
 
     
     <!-- Masthead-->
-    <header class="masthead2 col-md-10" style="margin-left: auto; margin-right: auto;">
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <header class="masthead2 col-md-10" style="margin-left: auto; margin-right: auto;">
 
-            <div class="masthead-heading2 text-uppercase"></div>
+        <div class="masthead-heading2 text-uppercase"></div>
 
-    </header>
+      </header>
+    </div>
 
 
 
 
     <!-- Content -->
 
+ 
     <div class="toc_container" id="description_container">
         <p class="toc_title">What's on this page</p>
         <ul class="toc_list">
@@ -127,11 +136,38 @@
         </ul>
     </div>
 
+    <div class="abstract">
+      <h1>ABSTRACT</h1>
+      <p> Our project consists on developing a device that
+        can regulate thyroid hormone imbalances. This device will
+        be designed to sense T3 at skin level through our engineered
+        E.coli, which will contain an intein-mediated protein splicing
+        linked to eGFP expression. A DIY turbidostat will be
+        considered to maintain the cellular culture conditions
+        constant. eGFP luminescence will be electronically sensed
+        and , based on this measurement, a PDI control system will
+        generate a feedback response so as to self-regulate and
+        restore the normal levels of T3 hormone in the human body.
+        On top of that, a platform with the database will be provided
+        as a tool to help clinicians remotely monitor the levels of
+        hormones.</p>
+    </div>
+
+
+
+   
 
       <section class="page-section" style="background-color: white; margin: 3rem 3rem 3rem 20rem">
-        <h1 id="Background">Background</h1>
-        <p>Thyroid disease is a global health problem that can hugely affect well-being, since thyroid hormones are essential for growth or regulation of energy metabolism, among others [1]. Although thyroid dysfunction is easily identifiable and treatable, dosage of the treatment at first stages is highly unspecific and patients must receive different amounts of drugs until their hormone level is stabilized [2].</p>
+        <div data-aos="flip-down"><h1 id="Background">Background</h1></div>
+        
+        <div class="media">
+          <img src="img/Thyroide_hypo.png" width=200 class="mr-3" alt="...">
+          <div class="media-body">
+            <p>Thyroid disease is a global health problem that can hugely affect well-being, since thyroid hormones are essential for growth or regulation of energy metabolism, among others [1]. Although thyroid dysfunction is easily identifiable and treatable, dosage of the treatment at first stages is highly unspecific and patients must receive different amounts of drugs until their hormone level is stabilized [2].</p>
+          </div>
+        </div>
 
+        <br>
         <h4 id="feedback">Thyrotropic feedback control</h4>
         <p>Thyroid disease is hampered by abnormalities in the <b>hypothalamic-pituitary-thyroid</b> axis, leading to conditions as hypothyroidism or hyperthyroidism. The hypothalamic-pituitary-thyroid axis is also known as thyroid homeostasis or thyrotropic feedback control, as thyroid hormone release is regulated by a negative feedback control (see Figure 1) [3].</p>
 
@@ -140,13 +176,14 @@
 
         <div class="spacer"></div>
 
-        <h1 id="approach">Approach</h1>
+        <div data-aos="flip-down"><h1 id="approach">Approach</h1></div>
         <p>Based on past approaches to external hormone regulation as the insulin pump, <b>HORMONIC</b> seeks to offer an artificial thyroid homeostasis, sensing the systemic amount of thyroid hormone and regulating as the thyrotropic feedback control would do [5]. Gathering recent advances in synthetic biology, control systems and electronics, we attempt to offer a <b>patient-specific</b> solution to the determination of dosage administration of pharmacs.</p>
         <p><b>HORMONIC</b> aims to quantify and release the needed amount of a drug so the thyroid homeostasis of the patient is kept in a healthy level through time. For that, our proposal is divided in three stages: the sensing part, which consists of an engineered <i>E. Coli</i> able detect T3 at the skin level and give a fluorescent response proportional to the detected T3; the controller, which is compound by an ARDUINO that has already implemented the response that has to be given to the sensed T3, and the releasing part, which in our case is a peristaltic pump that will answer to the guides of the controller.</p>
+        <img src="img/approach.png" class="center" width=600 alt="...">
 
         <div class="spacer"></div>
 
-        <h1 id="inspiration">Inspiration</h1>
+        <div data-aos="flip-down"><h1 id="inspiration">Inspiration</h1></div>
         <p> The problems caused by the initial undefinition of a clear dosage for thyroid dysfunction seem to be a hot topic among affected people. Just by asking some familiars and acquaintances we realized about the relevance of this issue. </p>
         <p>During the brainstorming sessions, we tackled concerns of our environment and tried to propose solutions involving synthetic biology. When the final decision needed to be given, we finally balanced our preferences towards <b>HORMONIC</b> because a great part of our team is coursing Biomedical Engineering, and our acquired knowledges seemed more useful on a therapeutic environment.</p>
 
@@ -214,5 +251,11 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- AOS animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>   
+          AOS.init(); 
+       </script>
+
 </body>
 </html>
