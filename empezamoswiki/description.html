@@ -30,6 +30,8 @@
 
 
     <body id="page-top" style="background-color: var(--light-gray)">
+
+      <div class="header">
        <!-- Navigation-->
        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
@@ -103,6 +105,10 @@
             </div>
         </div>
     </nav>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+  </div>
         
 
     
@@ -157,8 +163,8 @@
 
    
 
-      <section class="page-section" style="background-color: white; margin: 3rem 3rem 3rem 20rem">
-        <div data-aos="flip-down"><h1 id="Background">Background</h1></div>
+      <section class="page-section" id="description-section">
+        <div class="description-content" data-aos="flip-down"><h1 id="Background">Background</h1></div>
         
         <div class="media">
           <img src="img/Thyroide_hypo.png" width=200 class="mr-3" alt="...">
@@ -256,6 +262,19 @@
         <script>   
           AOS.init(); 
        </script>
+
+
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
 
 </body>
 </html>

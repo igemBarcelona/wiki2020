@@ -3,43 +3,10 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
+
+
     (function ($) {
     "use strict"; // Start of use strict
-
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top - 72,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
-        }
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
-    });
-
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#mainNav",
-        offset: 74,
-    });
 
 
 
@@ -70,9 +37,71 @@
     });
 
 
-    // Make anchor link go some pixels above where it's linked to
-    window.addEventListener("hashchange", function () {
-        window.scrollTo(window.scrollX, window.scrollY - 110);
+
+
+    $(document).ready(function() {
+
+        var getMax = function() {
+            return $(document).height() - $(window).height();
+        }
+    
+        var getValue = function() {
+            return $(window).scrollTop();
+        }
+    
+        if ('max' in document.createElement('progress')) {
+            var progressBar = $('progress');
+            
+            progressBar.attr({
+                max: getMax()
+            });
+    
+            $(document).on('scroll', function() {
+                progressBar.attr({
+                    value: getValue()
+                });
+            });
+    
+            $(window).resize(function() {
+                
+                progressBar.attr({
+                    max: getMax(),
+                    value: getValue()
+                });
+            });
+    
+        } else {
+    
+            var progressBar = $('.progress-bar'),
+                max = getMax(),
+                value, width;
+    
+            var getWidth = function() {
+                
+                value = getValue();
+                width = (value / max) * 100;
+                width = width + '%';
+                return width;
+            }
+    
+            var setWidth = function() {
+                progressBar.css({
+                    width: getWidth()
+                });
+            }
+    
+            $(document).on('scroll', setWidth);
+            $(window).on('resize', function() {
+                
+                max = getMax();
+                setWidth();
+            });
+        }
     });
 
+
+
+
 })(jQuery); // End of use strict
+
+
