@@ -17,18 +17,19 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   
+
     </head>
 
 
 
     <body id="page-top">
-       <!-- Navigation-->
-       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +38,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,30 +47,43 @@
                           <a class="dropdown-item" href="description.html">Description</a>
                           <a class="dropdown-item" href="#">Design</a>
                           <a class="dropdown-item" href="#">Implementation</a>
-                          <a class="dropdown-item" href="#">Proof of concept</a>
-                          <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Engineering</a>
+                          <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="#">Safety</a>
                         </div>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Labwork
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Experiments</a>
-                        </div>
+                            Labwork
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Lactone circuit</a>
+                            <a class="dropdown-item" href="#">T3 biosensor</a>
+                            <a class="dropdown-item" href="experiments.html">Lab protocols</a>
+                          </div>
                     </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          DryLab
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">Turbidostat design</a>
-                          <a class="dropdown-item" href="#">Modelling</a>
-                        </div>
+                            Drylab
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Turbidostat design</a>
+                            <a class="dropdown-item" href="#">Experiments</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Modelling</a>
+                          </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Results
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Wetlab</a>
+                            <a class="dropdown-item" href="#">Drylab</a>
+                          </div>
                     </li>
 
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Parts</a></li>
@@ -80,8 +93,9 @@
                           Human Practices
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="humanpractices.html">Human Practices</a>
+                          <a class="dropdown-item" href="humanpractices.html">Integrated Human Practices</a>
                           <a class="dropdown-item" href="#">Public Engagement</a>
+                          <a class="dropdown-item" href="#">Contribution</a>
                         </div>
                     </li>
 
@@ -91,7 +105,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="team.html">Team</a>
-                          <a class="dropdown-item" href="#">Attributions</a>
+                          <a class="dropdown-item" href="attributions.html">Attributions</a>
                           <a class="dropdown-item" href="#">Collaborations</a>
                         </div>
                     </li>
@@ -107,7 +121,7 @@
                 <div class="masthead-heading text-uppercase"></div>
             </div>
         </header>
-        
+
                <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
@@ -115,25 +129,29 @@
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
                     <h3 class="section-subheading text-muted">A team formed by biomedical engineering students.</h3>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/andreu.png" alt="" />
+                        <div class="team-member" >
+                            <img class="mx-auto rounded-circle img-fluid"  src="img/teamPic/andreu.png" alt="smaple image" data-toggle="modal" data-target="#modal1"/>
+                            <div class="mask flex-center">
+                            </div>
                             <h4>Andreu Pascuet</h4>
                             <p class="master">Intein master</p>
-                            <p class="text-muted">Hi there, I am Andreu! As my other fellows, I am studying biomedical engineering. I have grown surrounded by nature and all its power just amazes me. Being now able to mimic and control it in the lab it just feels unbelievable! When having a break, I love hiking through new places, playing the piano and staying with my pets.</p>
+                            <!--Pop up-->
+
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/edu.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/edu.png" alt="smaple image" data-toggle="modal" data-target="#modal2"/>
                             <h4>Eduard Suñé</h4>
                             <p class="master">Intein master</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/jan.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/jan.png" alt="smaple image" data-toggle="modal" data-target="#modal3"/>
                             <h4>Jan Pinyol</h4>
                             <p class="master">Wetlab researcher</p>
                         </div>
@@ -143,21 +161,21 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/jaume.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/jaume.png" alt="smaple image" data-toggle="modal" data-target="#modal4"/>
                             <h4>Jaume Puig</h4>
                             <p class="master">Member of 'The lactone boys'</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/june.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/june.png" alt="smaple image" data-toggle="modal" data-target="#modal5"/>
                             <h4>June Monge</h4>
                             <p class="master">thyroid association recruiter and drylab worker</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/marcos.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/marcos.png" alt="smaple image" data-toggle="modal" data-target="#modal6"/>
                             <h4>Marcos Chic</h4>
                             <p class="master">drylab worker</p>
                         </div>
@@ -167,21 +185,21 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/miriam.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/miriam.png" alt="smaple image" data-toggle="modal" data-target="#modal7"/>
                             <h4>Miriam Caravaca</h4>
                             <p class="master">Wiki fighter and wetlab researcher</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/nerea.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/nerea.png" alt="smaple image" data-toggle="modal" data-target="#modal8"/>
                             <h4>Nerea Alvarez de Eulate</h4>
                             <p class="master">wiki fighter and drylab worker</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/quim.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/quim.png" alt="smaple image" data-toggle="modal" data-target="#modal9"/>
                             <h4>Quim Martí</h4>
                             <p class="master">Member of 'The lactone boys' and part-time modeler</p>
                         </div>
@@ -189,13 +207,15 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4">
+                  <div class="col-lg-4">
+                  </div>
+                  <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="img/teamPic/tomas.png" alt="" />
+                            <img class="mx-auto rounded-circle" src="img/teamPic/tomas.png" alt="smaple image" data-toggle="modal" data-target="#modal10"/>
                             <h4>Tomas Berjaga</h4>
                             <p class="master">Member of 'The lactone boys' and part-time modeler</p>
                         </div>
-                    </div> 
+                    </div>
                 </div>
 
 
@@ -210,7 +230,469 @@
                 </div>
             </div>
         </section>
+        <!-- MODALS -->
 
+            <!-- Modal 1 -->
+            <div class="modal popup-member" id="modal1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Andreu Pascuet</h3>
+                      <h4>Intein Master</h4>
+                      <p>Hi there, I am Andreu! As my other fellows, I am studying biomedical engineering. I have grown surrounded by nature and all its power just amazes me. Being now able to mimic and control it in the lab it just feels unbelievable! When having a break, I love hiking through new places, playing the piano and staying with my pets.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-2x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-2x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-2x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/andreu_3.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="modal popup-member" id="modal2">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Eduard Suñé</h3>
+                      <h4>Intein Master</h4>
+                      <p>Hey! I’m Eduard Suñé, Biomedical Engineering student always up to discover new cities, people, music and, of course, synthetic biology. I always found amazing the idea to crack the code of life and being able to design it. I believe that’s the iGemer’s spirit. Hope you are ready!</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/edu.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="modal popup-member" id="modal3">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Jan Pinyol</h3>
+                      <h4>Wetlab Researcher</h4>
+                      <p>Hi! My name is Jan Pinyol. I have always been fascinated about brain and neuroscience, and of course synthetic biology. When I was a kid I often asked my mom to teach me about DNA. Being able now to edit it is just amazing! Hope I can make some dinosaur come back to life.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/jan.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 4 -->
+            <div class="modal popup-member" id="modal4">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Jaume Puig</h3>
+                      <h4>Member of 'The Lactone Boys'</h4>
+                      <p>Hello there! I’m Jaume Puig! I’m in my 4th year of Biomedical Engineering. I’m interested in a wide variety of fields, and above them there’s Synthetic Biology. I love climbing and reading, always surrounded by nature. That’s what inspired me to become a scientist!</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/jaume.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 5 -->
+            <div class="modal popup-member" id="modal5">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>June Monge</h3>
+                      <h4>Thyroid Associaiton Recruiter and Drylab Worker</h4>
+                      <p>Hi! I’m June Monge, a frustrated almost-anthropologist that changed her degree choice in the last minute! But I’ve found the perfect bridge between science and society: synthetic biology! Thanks to @iGEM all of my passions have come together: books, community work, lab… #iGEM2020 I’m also a basketball geek and love good (vegan) food and languages: I’m currently learning Deutsch. I hope the igemers’ community can help me out with that! I wish to hear from all of you soon!</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/June.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 6 -->
+            <div class="modal popup-member" id="modal6">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Marcos Chic</h3>
+                      <h4>Drylab Worker</h4>
+                      <p>“Hey! I'm Marcos Chic, currently studying biomedical engineering! Since I was a child I have always been really curious about everything that surrounded me and passionate about those things that may change our future, synthetic biology is without any doubt one of them.”</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/marcos.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal popup-member" id="modal7">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Miriam Caravaca</h3>
+                      <h4>Wiki Fighter and Wetlab Reseracher</h4>
+                      <p>Hi! I’m Miriam Caravaca, currently studying biomedical engineering too! Since I saw for the first time Jurassic Park I was fascinated about how we can modify the code of the life. Maybe one day we would return extinguished species into life again. In my free time I like to do sport, in concrete taekwondo but also I play the guitar and I love videogames too.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/miriam.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 8 -->
+            <div class="modal popup-member" id="modal8">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Nerea Alvarez de Eulate</h3>
+                      <h4>Wiki Fighter and Drylab Worker</h4>
+                      <p>Hello everyone! It’s Nerea Alvarez de Eulate here, a Biomedical Engineering student. I love the idea of being able to improve the healthcare using engineering tools. Being an igemer makes me feel really curious and excited about being an active member in synthetic biology community. Apart from science, I also enjoy music, especially jazz, cooking and climbing mountains. I hope you can enjoy our project as much as we are doing! </p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/nerea.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 9 -->
+            <div class="modal popup-member" id="modal9">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Quim Martí</h3>
+                      <h4>Member of 'The Lactone Boys' and Part-time Modeler</h4>
+                      <p>Hello there, my name is Quim Martí and I’m currently studying Biomedical engineering. I’m interested in systems biology, climate change and genome editing. I try to spend my free time between SW and gaming but with iGEM in mind free time is not a thing.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/quim.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 10 -->
+            <div class="modal popup-member" id="modal10">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Tomas Berjaga</h3>
+                      <h4>Member of 'The Lactone Boys' and Part-time Modeler</h4>
+                      <p>Hello! I’m Tomas Berjaga and I’m currently in the 3rd year of BSc in Biomedical Engineering. I am deeply interested in modelling and the connection between living systems and electronics. In my free time I love to meet with friends, play videogames and play jazz with my trombone.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                            <div>
+                              <i class="fab fa-instagram fa-3x"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div>
+                                  <i class="fab fa-twitter fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div>
+                                  <i class="fab fa-linkedin fa-3x"></i>
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/tomas.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Modal 1 -->
+            <div class="modal popup-member" id="modal1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" style="text-align: right; padding-right: 10px;">×</button>
+                <div class="row">
+                    <div class="col-lg">
+                      <h3>Andreu Pascuet</h3>
+                      <h4>Intein Master</h4>
+                      <p>Hi there, I am Andreu! As my other fellows, I am studying biomedical engineering. I have grown surrounded by nature and all its power just amazes me. Being now able to mimic and control it in the lab it just feels unbelievable! When having a break, I love hiking through new places, playing the piano and staying with my pets.</p>
+                      <div class="row">
+                        <div class="col">
+                          <a href="https://www.instagram.com/igembarcelona/">
+                              <div class="icon">
+                                  <img src="img/instagram.png">
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://twitter.com/igembarcelona?lang=gl">
+                              <div class="icon">
+                                  <img src="img/twitter.png">
+                              </div>
+                          </a>
+                        </div>
+                        <div class="col">
+                          <a href="https://www.twitch.tv/igem_upf">
+                              <div class="icon">
+                                  <img src="img/twitch.png">
+                              </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg">
+                      <img class="img-fluid"  src="img/teamPic/andreu_3.png"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
 
               <!-- Footer -->
 
@@ -249,7 +731,7 @@
                 </span>
             </div>
 
-            
+
         </div>
 
     </div>
@@ -266,4 +748,3 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
-        

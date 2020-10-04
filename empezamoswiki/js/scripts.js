@@ -4,6 +4,17 @@
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
     */
 
+    // Accordion
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+      }
+    }
+
 
     (function ($) {
     "use strict"; // Start of use strict
@@ -23,13 +34,19 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    // Table of contents
-    document.getElementById("description_container").style.display = "none"
-    $(window).scroll(function(){
-        if($(window).scrollTop()<600){ // Change depending on intro photo length
+
+
+    // Table of contents  
+    document.getElementById("description_container").style.display = "none";
+    var h_abs = document.documentElement.scrollHeight - document.documentElement.clientHeight + $("#description_container").height() - document.getElementById("description-section").scrollHeight - document.getElementById("footer_id").scrollHeight;
+    var h_footer = document.documentElement.scrollHeight - document.documentElement.clientHeight - document.getElementById("footer_id").scrollHeight;
+
+    $(window).scroll(function(){ 
+        if($(window).scrollTop()<h_abs){ 
             $("#description_container").fadeOut();
-        }else if($(window).scrollTop()>2700){ // Change depending on page length
+        }else if($(window).scrollTop()>h_footer){ 
             $("#description_container").fadeOut();
+            
         }else{
             $("#description_container").fadeIn();
         }
@@ -37,6 +54,11 @@
     });
 
 
+
+    // Make anchor link go some pixels above where it's linked to
+    window.addEventListener("hashchange", function () {
+        window.scrollTo(window.scrollX, window.scrollY - 110);
+    });
 
 
     $(document).ready(function() {
