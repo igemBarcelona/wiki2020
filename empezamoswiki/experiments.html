@@ -15,15 +15,23 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,200,300,400,500,600,700,800,900" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
+
+        <!-- AOS animations -->
+        <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+      </head>
 
 
-    
-    <body id="page-top">
+
+    <body id="page-top" style="background-color: var(--light-gray)">
+
+      <div class="header">
        <!-- Navigation-->
        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
@@ -110,36 +118,75 @@
             </div>
         </div>
     </nav>
-        
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+  </div>
+
+
+
     <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-heading text-uppercase">Title of the page</div>
-        </div>
-    </header>
+    <div data-aos="zoom-in" data-aos-duration="2000">
+      <header class="masthead2 col-md-10" style="margin-left: auto; margin-right: auto;">
+
+        <div class="masthead-heading2 text-uppercase"></div>
+
+      </header>
+    </div>
+
+
 
 
     <!-- Content -->
-      <section class="page-section">
-        <div class="container">
-            <p class="lead"> Aquí va el contenido de la página. </p>
+
+
+    <div class="toc_container" id="description_container">
+        <p class="toc_title">What's on this page</p>
+        <ul class="toc_list">
+          <li><a href="#Background">1 Background</a>
+          <ul>
+            <li><a href="#feedback">1.1 Thyrotropic feedback control</a></li>
+            <li><a href="#biomarker">1.2 Triiodothyronine as a skin biomarker</a></li>
+          </ul>
+        </li>
+        <li><a href="#approach">2 Approach</a></li>
+        <li><a href="#inspiration">3 Inspiration</a></li>
+        <li><a href="#ref">4 References</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+      <section class="page-section" id="description-section">
+        <button class="accordion"><h1 id="Digestion">Digestion</h1></button>
+        <div class="panel bg-light">
+          <h4>Introduction</h4>
+          <p>Protocol for the digestion of the genes of interest by Biobrick assembly. It is necessary to preapre in epppendorfs a mix for every DNA wewant to digest.</p>
+          <h4>Materials</h4>
+          <ul>
+            <li>H2O MiliQ</li>
+            <li>Cut Smart Buffer</li>
+            <li>Restriction enzymes</li>
+          </ul>
+          <h4>Procedure</h4>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div id="foo" class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="description-content" data-aos="flip-down"><h1 id="Background">Digestion Protocol</h1></div>
+     
+
     </section>
 
 
@@ -180,11 +227,11 @@
                 </span>
             </div>
 
-            
+
         </div>
 
     </div>
-      
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -195,5 +242,24 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    </body>
+        <!-- AOS animations -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+       </script>
+
+
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+
+</body>
 </html>

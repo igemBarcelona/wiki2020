@@ -1,6 +1,7 @@
 
 
 
+
 :root {
     margin: 0;
     padding: 0;
@@ -34,53 +35,12 @@
 }
 
 
-/* MASTHEAD */
 
-header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    text-align: center;
-    color: #fff;
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-}
-header.masthead .masthead-subheading {
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-header.masthead .masthead-heading {
-    font-size: 3.25rem;
-    font-weight: 700;
-    line-height: 3.25rem;
-    margin-bottom: 2rem;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
+
   
-@media (min-width: 768px) {
-    header.masthead {
-      padding-top: 17rem;
-      padding-bottom: 12.5rem;
-    }
-    header.masthead .masthead-subheading {
-        font-size: 2.25rem;
-        font-style: italic;
-        line-height: 2.25rem;
-        margin-bottom: 2rem;
-    }
-    header.masthead .masthead-heading {
-        font-size: 4.5rem;
-        font-weight: 700;
-        line-height: 4.5rem;
-        margin-bottom: 4rem;
-    }
-}
-  
+
+
+/* ------------------------------------------------- NAVBAR ------------------------------------------------------ */
 
 /* NAVBAR */
 
@@ -146,6 +106,121 @@ header.masthead .masthead-heading {
     }
 }
 
+
+/* ------------------------------------------------- FOOTER ------------------------------------------------------ */
+
+/* FOOTER */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background-color: var(--dark-gray);
+}
+
+.inner_footer{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+.inner_footer .logo_container{
+    width: 45%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+
+.inner_footer .logo_container img{
+    width: 400px;
+    height: auto;
+}
+
+.inner_footer .footer_third{
+    width: calc(21.67% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+
+.inner_footer .footer_third:last-child{
+    margin-right: 0;
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.footer_third a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  }
+
+.footer_third a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.inner_footer .footer_third h1{
+    font-size: 22px;
+    display: block;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    display: inline-block;
+    font-size: 18px;
+    color: grey;
+    font-weight: 200;
+    width: 30%;
+    padding-bottom: 5px;
+}
+
+.inner_footer .footer_third li{
+    padding: 0 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.inner_footer .footer_third span{
+    color: grey;
+    font-size: 18px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media(max-width: 800px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+/* ------------------------------------------------- GENERAL ------------------------------------------------------ */
+
 /* Table of contents */
 
 .toc_container {
@@ -156,7 +231,7 @@ header.masthead .masthead-heading {
     font-size: 90%;
     margin-bottom: 1em;
     padding: 20px;
-    width: 18%;
+    width: 16rem;
     position: fixed;
     bottom: 0;
 }
@@ -175,6 +250,11 @@ header.masthead .masthead-heading {
     color:  #999;
 }
 
+@media(max-width: 800px) {
+    .toc_container {
+        display: none !important;
+    }
+ }
 
 
 
@@ -198,6 +278,8 @@ header.masthead .masthead-heading {
 
 
 
+
+/* ------------------------------------------------- TIMELINE ------------------------------------------------------ */
 
 /* TIMELINE */
 
@@ -380,151 +462,38 @@ header.masthead .masthead-heading {
   }
 
 
-  /* TEAM */
-  
-  .team-member {
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-  .team-member img {
-    width: 14rem;
-    height: 14rem;
-    border: 0.5rem solid rgba(0, 0, 0, 0.1);
-  }
-  .team-member h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 0;
+
+  .timeline_icons:hover { /*los iconos aumentan de tamaño al pasar el ratón */
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
 }
 
 
-/* FOOTER */
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+  /* ------------------------------------------------- HOMEPAGE ------------------------------------------------------ */
 
-.footer{
-    width: 100vw;
-    display: block;
-    overflow: hidden;
-    padding: 50px 0;
-    box-sizing: border-box;
-    background-color: var(--dark-gray);
-}
+/* MASTHEAD */
 
-.inner_footer{
-    display: block;
-    margin: 0 auto;
-    width: 1100px;
-    height: 100%;
-}
-
-.inner_footer .logo_container{
-    width: 45%;
-    float: left;
-    height: 100%;
-    display: block;
-}
-
-.inner_footer .logo_container img{
-    width: 400px;
-    height: auto;
-}
-
-.inner_footer .footer_third{
-    width: calc(21.67% - 20px);
-    margin-right: 10px;
-    float: left;
-    height: 100%;
-    text-align: center;
-}
-
-.inner_footer .footer_third:last-child{
-    margin-right: 0;
-}
-
-.icon img{
-    width: 60px;
-    height: 60px;
-}
-
-.footer_third a .icon {
-    position: relative;
-    color: #262626;
-    transition: .5s;
-    z-index: 3;
-  }
-
-.footer_third a:hover .icon {
-    color: #fff;
-    transform: rotateY(360deg);
-}
-
-.inner_footer .footer_third h1{
-    font-size: 22px;
-    display: block;
-    color: white;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.inner_footer .footer_third a{
-    display: inline-block;
-    font-size: 18px;
-    color: grey;
-    font-weight: 200;
-    width: 30%;
-    padding-bottom: 5px;
-}
-
-.inner_footer .footer_third li{
-    padding: 0 5px;
-    font-size: 20px;
-    color: white;
-}
-
-.inner_footer .footer_third span{
-    color: grey;
-    font-size: 18px;
-    font-weight: 200;
-    display: block;
-    width: 100%;
-    padding-top: 20px;
-}
-
-@media(max-width: 800px){
-    .footer .inner_footer{
-        width: 90%;
-    }
-    .inner_footer .logo_container,
-    .inner_footer .footer_third{
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-}
-
-
-/* MASTHEAD DESCRIPTION */
-
-header.masthead2 {
+header.masthead {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    margin-top: 6em;
     text-align: center;
     color: #fff;
-    background-image:  url("../img/description5.png");
-    opacity: 1;
+    background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 }
-
-header.masthead2 .masthead-heading2 {
+header.masthead .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
     font-size: 3.25rem;
     font-weight: 700;
     line-height: 3.25rem;
@@ -533,11 +502,17 @@ header.masthead2 .masthead-heading2 {
 }
   
 @media (min-width: 768px) {
-    header.masthead2 {
+    header.masthead {
       padding-top: 17rem;
       padding-bottom: 12.5rem;
     }
-    header.masthead2 .masthead-heading2 {
+    header.masthead .masthead-subheading {
+        font-size: 2.25rem;
+        font-style: italic;
+        line-height: 2.25rem;
+        margin-bottom: 2rem;
+    }
+    header.masthead .masthead-heading {
         font-size: 4.5rem;
         font-weight: 700;
         line-height: 4.5rem;
@@ -545,85 +520,10 @@ header.masthead2 .masthead-heading2 {
     }
 }
 
-
-/* MASTHEAD HUMAN PRACTICES */
-
-header.masthead3 {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    margin-top: 4.5em;
-    background-image: url("../img/humanpractices.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-}
-
-  
-@media (min-width: 768px) {
-    header.masthead3 {
-      padding-top: 20rem;
-      padding-bottom: 17rem;     
-    }
-}
-
-
-/* MASTHEAD TEAM */
-
-header.masthead4 {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    margin-top: 5.5em;
-    background-image: url("../img/team2.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-}
-
-  
-@media (min-width: 768px) {
-    header.masthead4 {
-      padding-top: 17rem;
-      padding-bottom: 17rem;     
-    }
-}
-
-
-
-/* COSAS VARIAS */
-
-.page-section #homepage  {  /* Imagen de la homepage */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-
-.page-section h1 {
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    color: var(--logo-blue);
-    font-size: 2.5rem;
-    font-family: 'Dosis';
-    font-weight: 600;
-}
-
-
-.page-section .spacer {
-    font-size: 0; 
-    height: 50px;
-    line-height: 0;
-}
-
-
-
 /* HOMEPAGE: USEFUL LINKS */
 
-.container {
+.card-deck {
     background-color: transparent;
-    position: inline-block;
 }
 
 #useful-links {
@@ -690,51 +590,140 @@ header.masthead4 {
       cursor:pointer
   }
 
+  .page-section #homepage  {  /* Imagen de la homepage */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
 
 
- /* DESCRIPTION PAGE: ABSTRACT */
+  /* ------------------------------------------------- DESCRIPTION ------------------------------------------------------ */
+
+/* MASTHEAD DESCRIPTION */
+
+header.masthead2 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 6em;
+    text-align: center;
+    color: #fff;
+    background-image:  url("../img/description5.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+header.masthead2 .masthead-heading2 {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+  
+@media (min-width: 768px) {
+    header.masthead2 {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+    header.masthead2 .masthead-heading2 {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* DESCRIPTION PAGE: ABSTRACT */
  
- .abstract {
-     background-color: var(--green2);
-     color: white;
-     padding: 2rem 7rem;
-     margin: 2rem 5rem;
-     font-family: 'Dosis';
-     font-size: 20px;
+.abstract {
+    background-color: var(--green2);
+    color: white;
+    padding: 2rem 7rem;
+    margin: 2rem 5rem;
+    font-family: 'Dosis';
+    font-size: 20px;
+}
+
+
+.abstract h1 {
+   text-transform: uppercase;
+   padding-bottom: 1rem;
+   color: white;
+   font-size: 2.5rem;
+   font-family: 'Dosis';
+   font-weight: 600;
+}
+
+#description-section {
+   background-color: white; 
+   margin: 3rem 3rem 3rem 20rem;
+}
+
+.responsive-image {
+   width: 200px;
+   display: block;
+   margin: auto;
  }
 
+@media(max-width: 800px) {
+   .abstract {
+       padding: 2rem 2rem;
+       margin: 2rem 2rem;
+       font-size: 15px;
+   }
 
- .abstract h1 {
+   .toc_container {
+       display: none !important;
+   }
+
+   #description-section {
+       margin: 3rem 2rem 3rem 3rem;
+       font-size: 14px !important;
+       
+   }
+}
+
+
+@media(max-width: 500px) {
+   .abstract {
+       padding: 1rem 1rem;
+       margin: 1rem 1rem;
+       font-size: 15px;
+   }
+
+   .toc_container {
+       display: none !important;
+   }
+
+   #description-section {
+       margin: 3rem 2rem 3rem 3rem;
+       font-size: 14px !important;
+       
+   }
+}
+
+
+/* COSAS VARIAS */
+
+.page-section h1 {
     text-transform: uppercase;
     padding-bottom: 1rem;
-    color: white;
+    color: var(--logo-blue);
     font-size: 2.5rem;
     font-family: 'Dosis';
     font-weight: 600;
 }
 
-#description-section {
-    background-color: white; 
-    margin: 3rem 3rem 3rem 20rem;
+
+.page-section .spacer {
+    font-size: 0; 
+    height: 50px;
+    line-height: 0;
 }
-
-@media(max-width: 800px) {
-    .abstract {
-        padding: 2rem 2rem;
-        margin: 2rem 2rem;
-        font-size: 15px;
-    }
-
-    .toc_container {
-        display: none !important;
-    }
-
-    #description-section {
-        margin: 3rem 2rem 3rem 3rem;
-        font-size: 14px !important;
-        
-    }
- }
 
 
 .center {
@@ -747,14 +736,150 @@ header.masthead4 {
 
 
 
+  /* ------------------------------------------------- TEAM ------------------------------------------------------ */
 
+  /* TEAM */
+  
+/* TEAM */
 
-
-.timeline_icons:hover {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2); 
-    transform: scale(1.2); 
+.team-member {
+    margin-bottom: 3rem;
+    text-align: center;
   }
+  .team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  .team-member img:hover
+  {
+    transform: scale(1.1);
+  }
+
+  .team-member h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+/* POP UP TEAM*/
+.popup-member h3{
+  padding-top: 20px;
+  padding-left: 50px;
+  color: var(--logo-blue);
+  font-family: 'Dosis';
+  font-weight: 900;
+
+}
+
+.popup-member h4{
+  padding-left: 50px;
+  padding-bottom: 10px;
+  color: var(--logo-yellow);
+  font-family: 'Dosis';
+  font-weight: 900;
+}
+
+.popup-member p{
+  padding-left: 50px;
+}
+
+/* ICONS */
+.fa-instagram {
+  color: var(--dark-gray);
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.fa-twitter {
+  color: var(--dark-gray);
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.fa-linkedin {
+  color: var(--dark-gray);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* EXPERIMENTS */
+button.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+ button.accordion h1 {
+    text-transform: uppercase;
+    color: var(--logo-blue);
+    font-size: 2.5rem;
+    font-family: 'Dosis';
+    font-weight: 600;
+    padding-bottom: none;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: var(--logo-blue);
+}
+
+button.accordion.active h1, button.accordion:hover h1{
+    color: #ffffff;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 20px 20px 20px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* MASTHEAD TEAM */
+
+header.masthead4 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 5.5em;
+    background-image: url("../img/team2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+  
+@media (min-width: 768px) {
+    header.masthead4 {
+      padding-top: 17rem;
+      padding-bottom: 17rem;     
+    }
+}
 
 .team-member .master {
     text-transform: uppercase;
@@ -766,7 +891,35 @@ header.masthead4 {
 }
 
 
-	/* --- [ STYLING FOR SCROLLING PROGRESS BAR ] --- */
+
+
+/* ------------------------------------------------- HUMAN PRACTICES ------------------------------------------------------ */
+
+
+/* MASTHEAD HUMAN PRACTICES */
+
+header.masthead3 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 4.5em;
+    background-image: url("../img/humanpractices.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+  
+@media (min-width: 768px) {
+    header.masthead3 {
+      padding-top: 20rem;
+      padding-bottom: 17rem;     
+    }
+}
+
+
+
+/* ------------------------------------------------- PROGRESS BAR ------------------------------------------------------ */
 
     .header {
         position: fixed;
@@ -786,7 +939,7 @@ header.masthead4 {
       
     .header .progress-bar {
         height: 8px;
-        background: var(--logo-yellow);
+        background: var(--green2);
         width: 0%;
       }
 
