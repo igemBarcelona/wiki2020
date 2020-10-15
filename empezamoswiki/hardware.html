@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,10 +22,10 @@
         <link href="css/our_css.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    
         <!-- AOS animations -->
         <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-
+      
       </head>
 
 
@@ -32,7 +33,7 @@
     <body id="page-top" style="background-color: var(--light-gray)">
 
       <div class="header">
-      <!-- Navigation-->
+          <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" /></a>
@@ -121,11 +122,11 @@
     </nav>
       <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
-      </div>
+      </div> 
   </div>
+        
 
-
-
+    
     <!-- Masthead-->
     <div data-aos="zoom-in" data-aos-duration="2000">
       <header class="masthead2 col-md-10" style="margin-left: auto; margin-right: auto;">
@@ -141,59 +142,92 @@
     <!-- Content -->
 
 
+    <div class="abstract">
+      <p> This section describes the hardware of our continuous microbiological culture device: <b>TURBIDOSTAT</b>. </p>
+    </div>
+ 
     <div class="toc_container" id="description_container">
-        <p class="toc_title">What's on this page</p>
+        <p class="toc_title">Hardware</p>
         <ul class="toc_list">
-          <li><a href="#Background">1 Background</a>
-          <ul>
-            <li><a href="#feedback">1.1 Thyrotropic feedback control</a></li>
-            <li><a href="#biomarker">1.2 Triiodothyronine as a skin biomarker</a></li>
-          </ul>
-        </li>
-        <li><a href="#approach">2 Approach</a></li>
-        <li><a href="#inspiration">3 Inspiration</a></li>
-        <li><a href="#ref">4 References</a></li>
+          <li><a href="#engineering">Engineering aim</a>
+          <li><a href="#inspiration">Inspiration</a></li>
+          <li><a href="#foundations">Main foundations</a></li>
+          <li><a href="#electronics">Electronic module</a></li>
+          <li><a href="#ref">References</a></li>
         </ul>
     </div>
 
-
-
-
-
-
+  
+   
 
       <section class="page-section" id="description-section">
-        <button class="accordion"><h1 id="Digestion">Digestion</h1></button>
+
+        <div class="collaboration">
+            <h1 class="display-4" id="engineering" data-aos="flip-down">Engineering aim</h1>
+            <h4>What is the engineering aim of our turbidostat?</h4>
+        </div>
+        <br>
+        <div class="row">
+          <img class="col-xl-6 col-lg-5 col-md-12 col-sm-12" src="img/lactone_circuit.png" alt="...">
+          <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
+            <p>In order to perform a long-lasting in vitro demonstration of our proof of concept feedback system we constructed a turbidostat. This culture device ensures that the experiment conditions (cell density, temperature…) are constant over time. Meaning that we need to keep a constant concentration on the producer and the reporter cells, as changes in the OD would affect the relation between lactone and sfGFP concentrations and, therefore, feedback could not be achieved in a consistent way.</p>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+        <div class="collaboration">
+            <h1 class="display-4" id="inspiration" data-aos="flip-down">Inspiration</h1>
+            <h4>Where the inspiration for our turbidostat came from? </h4>
+        </div>
+
+        <p>Living organisms exist in complex environments, which have certain conditions that favor their correct growth. Automated cell growth systems are capable of mimicking these conditions by adjusting variables such as temperature or Optical Density (OD) in order to maintain constant growth rates. Among them, there are DIY turbidostats such as the eVOLVER that are composed of open-source wetware, hardware and software. In particular, our hardware design is inspired by the eVolver multi modular platform. </p>
+        <p>Maintaining the OD at a constant value is a key factor in these systems because it allows to have a rigorous and precise control of the living organisms inside, while not letting the cells get saturated and limited by the available resources.</p>
+  
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+        <div class="collaboration">
+            <h1 class="display-4" id="foundations" data-aos="flip-down">Main foundations</h1>
+            <h4>What are the main foundations of our turbidostat?</h4>
+        </div>
+
+        <img class="center" style="width: 60%" src="img/hardware/turbidostat.png" atr="">
+        <p>Our hardware design (inspired by eVolver) mainly contains 3 modules:</p>
+
+
+        
+
+        <button class="accordion"><h5>Sleeve</h5></button>
         <div class="panel bg-light">
-          <h4>Introduction</h4>
-          <p>Protocol for the digestion of the genes of interest by Biobrick assembly. It is necessary to preapre in epppendorfs a mix for every DNA wewant to digest.</p>
-          <h4>Materials</h4>
-          <ul>
-            <li>H2O MiliQ</li>
-            <li>Cut Smart Buffer</li>
-            <li>Restriction enzymes</li>
-          </ul>
-          <h4>Procedure</h4>
+            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
+        </div>
+        <button class="accordion"><h5>Fluidic module</h5></button>
+        <div class="panel bg-light">
+            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
+        </div>
+        <button class="accordion"><h5>Electronic module</h5></button>
+        <div class="panel bg-light">
+            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
         </div>
 
-        <button class="accordion">Section 2</button>
-        <div class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
 
-        <button class="accordion">Section 3</button>
-        <div id="foo" class="panel">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="collaboration">
+            <h1 class="display-4" id="electronics" data-aos="flip-down">Electronic module</h1>
+            <h4>What about the electronic module?</h4>
         </div>
-        <div class="description-content" data-aos="flip-down"><h1 id="Background">Digestion Protocol</h1></div>
-     
+        <p>In this section a more detailed description of the circuits used for the management of the turbidostat can be found. Each subsection contains a schematic image and a brief description of the components. It has to be taken into account that despite images here show a breadboard for the circuit integration, in the real implementation of the turbidostat stripboards are also used.</p>
 
+        <img class="center" src="img/hardware/fan.png" atr="">
     </section>
 
 
               <!-- Footer -->
 
-      <div class="footer">
+      <div class="footer" id="footer_id">
         <div class="inner_footer">
             <div class="logo_container">
                 <img src="img/logo_footer.png">
@@ -228,11 +262,11 @@
                 </span>
             </div>
 
-
+            
         </div>
 
     </div>
-
+      
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
@@ -245,15 +279,15 @@
         <script src="js/scripts.js"></script>
         <!-- AOS animations -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
+        <script>   
+          AOS.init(); 
        </script>
 
 
         <script>
-            // When the user scrolls the page, execute myFunction
+            // When the user scrolls the page, execute myFunction 
             window.onscroll = function() {myFunction()};
-
+            
             function myFunction() {
               var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
               var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;

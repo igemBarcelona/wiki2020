@@ -24,8 +24,9 @@
 
     
     <body id="page-top">
-       <!-- Navigation-->
-       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
+      <div class="header">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: var(--dark-gray)">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,11 +42,11 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="description.html">Description</a>
-                          <a class="dropdown-item" href="#">Design</a>
-                          <a class="dropdown-item" href="#">Implementation</a>
-                          <a class="dropdown-item" href="#">Engineering</a>
+                          <a class="dropdown-item" href="design.html">Design</a>
+                          <a class="dropdown-item" href="implementation.html">Implementation</a>
+                          <a class="dropdown-item" href="engineering.html">Engineering</a>
                           <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Safety</a>
+                          <a class="dropdown-item" href="safety.html">Safety</a>
                         </div>
                     </li>
 
@@ -54,8 +55,8 @@
                             Labwork
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Lactone circuit</a>
-                            <a class="dropdown-item" href="#">T3 biosensor</a>
+                            <a class="dropdown-item" href="lactone.html">Lactone circuit</a>
+                            <a class="dropdown-item" href="biosensor.html">T3 biosensor</a>
                             <a class="dropdown-item" href="experiments.html">Lab protocols</a>
                           </div>
                     </li>
@@ -65,10 +66,11 @@
                             Drylab
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Turbidostat design</a>
-                            <a class="dropdown-item" href="#">Experiments</a>
+                            <a class="dropdown-item" href="hardware.html">Hardware</a>
+                            <a class="dropdown-item" href="software.html">Software</a>
+                            <a class="dropdown-item" href="dryexperiments.html">Experiments</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Modelling</a>
+                            <a class="dropdown-item" href="modelling.html">Modelling</a>
                           </div>
                     </li>
 
@@ -77,8 +79,8 @@
                             Results
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Wetlab</a>
-                            <a class="dropdown-item" href="#">Drylab</a>
+                            <a class="dropdown-item" href="wetresults.html">Wetlab</a>
+                            <a class="dropdown-item" href="dryresults.html">Drylab</a>
                           </div>
                     </li>
 
@@ -90,8 +92,8 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="humanpractices.html">Integrated Human Practices</a>
-                          <a class="dropdown-item" href="#">Public Engagement</a>
-                          <a class="dropdown-item" href="#">Contribution</a>
+                          <a class="dropdown-item" href="publicengagement.html">Public Engagement</a>
+                          <a class="dropdown-item" href="contribution.html">Contribution</a>
                         </div>
                     </li>
 
@@ -102,7 +104,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="team.html">Team</a>
                           <a class="dropdown-item" href="attributions.html">Attributions</a>
-                          <a class="dropdown-item" href="#">Collaborations</a>
+                          <a class="dropdown-item" href="collaborations.html">Collaborations</a>
                         </div>
                     </li>
 
@@ -110,6 +112,10 @@
             </div>
         </div>
     </nav>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
 
         <!-- Masthead-->
         <div data-aos="zoom-in" data-aos-duration="2000">
@@ -135,40 +141,29 @@
                     <h3 class="section-subheading text-muted">Enjoy every stop on our journey to make HORMONIC a socially responsible, sustainable, safe and inclusive project.</h3>
                 </div>
                 <ul class="timeline">
-                    
+
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/survey2.png" alt="" data-toggle="modal" data-target="#modal1"></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/unsplash/design.png" alt="" data-toggle="modal" data-target="#modal2"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-month" style="color: #00aad4ff;">April 2020</h4>
-                                <h4 class="subheading">Needs finding survey</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Searching for challenges that bother researchers in their daily laboratory procedures. </p></div>
-                        </div>
-                    </li>
-                    
-
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/brainstorming2.png" alt="" data-toggle="modal" data-target="#modal2"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
                                 <h4 class="subheading">First Brainstorming sessions</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Letting our mind think of any crazy and ambitious idea to help solve a problem using synthetic biology tools. </p></div>
                         </div>
                     </li>
                     
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/man2.png" alt="" data-toggle="modal" data-target="#modal3"></div>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/unsplash/biomarker.jpg" alt="" data-toggle="modal" data-target="#modal3"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Marc Güell Cargol</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Researcher in the Biomedical Research Park of Barcelona</p></div>
+                            <div class="timeline-body"><p class="text-muted">The head of Translational Synthetic Biology laboratory in the Biomedical Research Park of Barcelona</p></div>
                         </div>
                     </li>
                     
-                    <li class="timeline-inverted">
+                    <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal4"></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -178,6 +173,107 @@
                             <div class="timeline-body"><p class="text-muted">May 17, each team member voted for one of the candidate projects and the winner was...</p></div>
                         </div>
                     </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal5"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-month" style="color: #00aad4ff;">June 2020</h4>
+                                <h4 class="subheading">Javier Macia Santamaria</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The head of the laboratory of Synthetic Biology for Biomedical Applications in the Biomedical Research Park of Barcelona.</p></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal6"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Guillermo Nevot</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">PhD candidate at the Translational Synthetic Biology group in the Biomedical Research Park of Barcelona.</p></div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal7"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-month" style="color: #00aad4ff;">July 2020</h4>
+                                <h4 class="subheading">Dr Ricard Torras</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Former head of department of the Endocrinology Service at Hospital Mutua Terrassa. </p></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal8"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-month" style="color: #00aad4ff;">August 2020</h4>
+                                <h4 class="subheading">SCEN</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Catalan Society of Endocrinology and Nutrition. </p></div>
+                        </div>
+                    </li>
+
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal9"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-month" style="color: #00aad4ff;">September 2020</h4>
+                                <h4 class="subheading">ETA</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">European Thyroid Association</p></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal10"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">SEEN</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Spanish society of endocrinology and nutrition</p></div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal11"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Dr Albert Goday</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> The head of department in the endocrinology unit of Parc de Salut Mar Hospital in Barcelona. </p></div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal12"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-month" style="color: #00aad4ff;">October 2020</h4>
+                                <h4 class="subheading">Vanesa Daza</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Member of the Wireless Communication Group within the department of Information and Communication Technology at the UPF, Barcelona.</p></div>
+                        </div>
+                    </li>
+
+                    
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid timeline_icons" src="img/human_practices/decision.png" alt="" data-toggle="modal" data-target="#modal13"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Clinical Research Ethic Committee</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"> Managed by IMIM, the Hospital del Mar Institute for Medical Research.</p></div>
+                        </div>
+                    </li>
+
+                    
+
+
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4 style="color:black;">
@@ -308,6 +404,239 @@
         </div>
 
 
+        <!-- Modal 5 -->
+        <div class="modal" id="modal5">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Javier Macia Santamaria</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/javierMacia.jpg" class="center" style="width:200px;">
+                    <br>
+                    <p>The head of the laboratory of Synthetic Biology for Biomedical Applications, in the Biomedical Research Park of Barcelona. He has been currently working on the recovery of polluting waste through its transformation by various consortiums of microorganisms.</p>
+                    <p><b>Input:</b> He gave us the ideas of accomplishing an automated feedback system with a lactone circuit as a proof of concept.</p>
+                    <p><b>Output:</b> Our wetlab team focused on engineering E.Coli so that it can produce lactone and a second strain acting as biosensors to detect the amount of produced lactone.  </p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 6 -->
+        <div class="modal" id="modal6">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Guillermo Nevot</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/guillermoNevot.jpg" class="center" style="width:300px;">
+                    <br>
+                    <p>Researcher, a PhD candidate at the Translational Synthetic Biology group in the Biomedical Research Park of Barcelona. He had previous experience on building a DIY turbidostat, an automated and continuous cell culture device. </p>
+                    <p><b>Input:</b> He gave us some tips and guidance to build out DIY turbidostat.</p>
+                    <p><b>Output:</b> Our drylab team focused on the design optimization of the electronic circuits and the self-regulation systems behind a turbidostat.</p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 7 -->
+        <div class="modal" id="modal7">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Dr Ricard Torras</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/ricardTorras.jpg" class="center" style="width:300px;">
+                    <br>
+                    <p>Former head of department of the Endocrinology Service at Hospital Mutua Terrassa and at the General Hospital of Barcelona. </p>
+                    <p><b>Input:</b> We had a video call in which we broadened our knowledge on the physiology of the endocrine system, its pathology, and what are the main diagnosis and treatments processes used nowadays. We also discussed the viability of our approach in the clinical world. Moreover, he proposed another possible implementation for an automatic control of post-surgery thyroid cancer.</p>
+                    <p><b>Output:</b> Our team was encouraged to continue investigating and working on Hormonic. It promised to be a project with high potential. </p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 8 -->
+        <div class="modal" id="modal8">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">SCEN</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/scen.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>Catalan Society of Endocrinology and Nutrition. It promotes the development of tasks of medical and scientific interest within the endocrinology, metabolism and nutrition fields. We asked them for an overall sight over the project.</p>
+                    <p><b>Input:</b> They stated that sweat is a variable and unstable secretion which makes it extremely challenging to relate the amount of T3 detected to a proper thyroid disease diagnosis and treatment. Moreover, they emphasized the importance of an individualized treatment because a low level of T3 is not always a consequence of hypothyroidism. However, they showed interest in our approach, especially for future application in patients suffering from malabsorption who cannot take the drug in pill form but through a weekly intramuscular puncture.</p>
+                    <p><b>Output:</b> The idea of detecting T3 hormone at skin level was discarded. Instead, a microneedle capable of reaching interstitial liquid (or blood) was contemplated.</p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal 9 -->
+        <div class="modal" id="modal9">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">ETA</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/eta.png" class="center" style="width:200px;">
+                    <br>
+                    <p>European Thyroid Association. The European Thyroid Association's aims are to promote knowledge in the thyroid field (fundamental and clinical) and improve knowledge of the thyroid gland and its diseases. We carried out an interview with Eric Fliers, member of the executive committee and co-author of the <i>European Thyroid Association (ETA) and Thyroid Federation International (TFI) Joint Position Statement on the Interchangeability of Levothyroxine Products in EU Countries</i> article. Together with him we designed an insertion and monitoring plan for our new treatment.</p>
+                    <p><b>Input:</b> He stated that each tissue has its own organ-specific regulation by a deionization of T4 into T3, depending on its local enzyme concentration. Hence, we should take into consideration that we are detecting T3 locally and it does not need to involve the same levels of hormone in other tissues. He advised us to protect the levothyroxine pump from external light because otherwise it would degrade and confirmed that plasma is a reliable source to detect hormones. Regarding the content of the previously mentioned article, he gave us advice on how to fulfill their demands on bioequivalence. Overall, He strongly believed that even though the technology needed to accomplish a device like “Hormonic” is super complex, it is worth to investigate on it and give it a try. It would have a huge impact on helping the human body regulate its metabolic needs.</p>
+                    <p><b>Output:</b> Reinforcement of the statement made by the members of the SCEN, which affirms that the local hormonal condition of the skin cannot be extrapolated to the global condition of the patient. Together with him we designed a <a href="implementation">test to ensure bioequivalence</a> between current treatments and Hormonic; and a subsequent monitoring plan to keep the patient’s evolution under observation. </p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 10 -->
+        <div class="modal" id="modal10">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Carles Zafon (SEEN)</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/seen.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>SEEN: Spanish Society of Endocrinology and Nutrition</p>
+                    <p><b>Input:</b>He remarked the existence of a circadian rhythm of T3 and its delayed response to the infusion of levothyroxine due to levothyroxine’s (L-T4) long half-life and its slow uncharacterized metabolization into T3. He explained that analytic determinations are done via the quantification of free hormone concentration, every 6 months, but that the time at which the real effect of the dosage adjustment is unknown, and maybe it should be done earlier. On top of that, he pointed out that there are several factors such as age, other diseases and drugs that play a role on thyroid hormone levels. Finally, a list of possible patients that could benefit from the use of Hormonic was made.</p>
+                    <p><b>Output:</b>It was concluded that pre-clinical studies should be carried out in order to characterize the circadian rhythm that should be set as the reference value of our <a href="software.html">PID control system</a> and another one that characterized the conversion of T4 to T3 in response to different levothyroxine injections. Moreover, the optimal time between dosage adjustment should be identified. In relation to the possible factors that alter hormone levels, population studies should be carried out in order to characterize subgroups. Finally, a more detailed list of beneficiaries was defined. All of these considerations were used to define the <a href="implementation.html">future implementation</a> of Hormonic.</p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 11 -->
+        <div class="modal" id="modal11">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Dr Albert Goday</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/albertGoday.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>Head of department in the endocrinology unit of Parc de Salut Mar Hospital in Barcelona.</p>
+                    <div class="goday">“Anything about advances in medical technology is fascinating.” - Albert Goday</div>
+                    <p><b>Input:</b> Expertise on the field, physiological impact, clinical viability, device implementation and possible introduction to patients. </p>
+                    <p><b>Output:</b> Although Dr. Goday stated that the current treatment works well in the clinic, he was aware of the need to deeply investigate this field and automatize the therapy. He stated that 40% of the patients do not have a proper attachment to the treatment. Moreover, he proposed to us the idea of a possible application in patients suffering from Euthyroid Sick Syndrome, with the aim to monitorize these patients and prevent them from relapsing to a worse state.</p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 12 -->
+        <div class="modal" id="modal12">
+            <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h2 class="modal-title">Vanesa Daza</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+    
+                <div class="modal-body">
+                    <img src="img/human_practices/vanesaDaza.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>Member of the Wireless Communication Group within the department of Information and Communication Technology at the UPF. We contacted her with the aim of adapting the possible future implementation so that the wireless transmission of health related data is secure.</p>
+                    <p><b>Input:</b> she recommended the implementation of a symmetric-key algorithm, which makes use of cryptographic keys for the encryption of the incoming and outgoing data (concentration of T3 hormone and subsequent activation signal of the levothyroxine injection pumps) and the decryption of that same information (for PDI control computation and pump activation). In particular, she emphasized the high compatibility and good performance of the Advanced Encryption Standards (AES) 256. Furthermore, she suggested implementing the cryptography processes within the medical device, so that the patient does not have direct access to its key and the data transmission has one less open door. However, the corresponding endocrinologist should receive its own key from its department. In order to prevent external agents from injecting data, she suggested the use of digital signatures, at cost of a higher computational load.</p>
+                    <p><b>Output:</b> security aspects were gathered and summarized into the possible <a href="description.html">future implementation</a> plan.</p>
+                </div>
+    
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal 13 -->
+        <div class="modal" id="modal13">
+            <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h2 class="modal-title">Clinical Research Ethic Committee - IMIM</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <div class="modal-body">
+                    <img src="img/human_practices/ricardTorras.jpg" class="center" style="width:350px;">
+                    <br>
+                    <p>the committee on the ethics of medicines research ensures ethical and legal correctness of any investigation project dealing with physical or psychological risk to a human being. It is managed by IMIM, the Hospital del Mar Institute for Medical Research. We contacted them to know about bioethics and biosafety issues related to the future implementation of Hormonic device.</p>
+                    <p><b>Input:</b> When it comes to the process of approval, the committee informed us that the first step is to accomplish a clinical trial on humans after obtaining the approval from the ethics committee itself and the AEMPS (Spanish agency for medicines and medical devices). Further steps would imply achieving the CE mark. </p>
+                    <p><b>Output:</b> Bioethical aspects were gathered and summarized into the possible <a href="description.html">future implementation</a> plan.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>    
+            </div>
+            </div>
+        </div>
+
 
 
 
@@ -369,6 +698,19 @@
             AOS.init(); 
         </script>
         
+
+
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {myFunction()};
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
 
     </body>
 </html>

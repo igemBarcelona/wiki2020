@@ -47,7 +47,8 @@
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #2125291a;
+    z-index: 100;
 }
 #mainNav .navbar-toggler {
     padding: 0.75rem;
@@ -224,7 +225,8 @@
 /* Table of contents */
 
 .toc_container {
-    background: white none repeat scroll 0 0;
+    background: var(--light-gray);
+    /* background: rgb(255, 204, 0, 0.6); */
     margin-left: 50px;
     border-left: 5px solid var(--logo-yellow);
     display: table;
@@ -237,9 +239,11 @@
 }
 
 .toc_title {
-    font-weight: 700;
-    text-align: center;
-    color: black;
+    font-weight: 900;
+    /* text-align: center; */
+    color: var(--dark-gray);
+    font-size: 1.4 rem;
+    text-transform: uppercase;
 }
 
 .toc_container li, .toc_container ul, .toc_container ul li{
@@ -247,7 +251,8 @@
 }
 
 .toc_container a {
-    color:  #999;
+    color:  var(--dark-gray);
+    font-size: 0.9rem;
 }
 
 @media(max-width: 800px) {
@@ -256,6 +261,12 @@
     }
  }
 
+.toc_container a:hover {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
 
 
 /* PAGE-SECTION */
@@ -331,7 +342,6 @@
 }
 .timeline > li .timeline-image {
     position: absolute;
-    z-index: 100;
     left: 0;
     width: 80px;
     height: 80px;
@@ -462,7 +472,6 @@
   }
 
 
-
   .timeline_icons:hover { /*los iconos aumentan de tamaño al pasar el ratón */
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2); 
@@ -480,7 +489,7 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url("../img/bg.png");
+    background-image: url("../img/bg2.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -803,7 +812,44 @@ header.masthead2 .masthead-heading2 {
   margin-bottom: 20px;
 }
 
-/* EXPERIMENTS */
+
+/* MASTHEAD TEAM */
+
+header.masthead4 {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    margin-top: 5.5em;
+    background-image: url("../img/team2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+  
+@media (min-width: 768px) {
+    header.masthead4 {
+      padding-top: 17rem;
+      padding-bottom: 17rem;     
+    }
+}
+
+.team-member .master {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: var(--logo-blue);
+    font-size: 1rem;
+    font-family: 'Dosis';
+    font-weight: 600;
+}
+
+
+/* ------------------------------------------------- EXPERIMENTS ------------------------------------------------------ */
+
+
 button.accordion {
     background-color: #ffffff;
     color: #444;
@@ -835,12 +881,17 @@ button.accordion.active h1, button.accordion:hover h1{
     color: #ffffff;
 }
 
+button.accordion.active h5, button.accordion:hover h5{
+    color: #ffffff;
+}
+
 button.accordion:after {
     content: '\02795';
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
+    margin-bottom: -15px;
 }
 
 button.accordion.active:after {
@@ -859,37 +910,6 @@ div.panel.show {
     opacity: 1;
     max-height: 500px;
 }
-
-/* MASTHEAD TEAM */
-
-header.masthead4 {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    margin-top: 5.5em;
-    background-image: url("../img/team2.png");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-}
-
-  
-@media (min-width: 768px) {
-    header.masthead4 {
-      padding-top: 17rem;
-      padding-bottom: 17rem;     
-    }
-}
-
-.team-member .master {
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    color: var(--logo-blue);
-    font-size: 1rem;
-    font-family: 'Dosis';
-    font-weight: 550;
-}
-
 
 
 
@@ -918,6 +938,15 @@ header.masthead3 {
 }
 
 
+.goday {
+    background-color: var(--green2);
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+    font-family: 'Dosis';
+    font-size: 18px;
+}
+
 
 /* ------------------------------------------------- PROGRESS BAR ------------------------------------------------------ */
 
@@ -945,6 +974,28 @@ header.masthead3 {
 
 
 
+/* ------------------------------------------------- ATTRIBUTIONS ------------------------------------------------------ */
+
+      dt, dd { /* spacing between unordered list items */
+        margin: 15px 0; 
+      }
 
 
-       
+/* ------------------------------------------------- COLLABORATIONS ------------------------------------------------------ */
+
+
+.collaboration h3{
+    padding-top: 20px;
+    padding-left: 50px;
+    color: var(--logo-blue);
+    font-family: 'Dosis';
+    font-weight: 900;
+
+}
+
+.collaboration h4{
+    padding-bottom: 10px;
+    color: var(--logo-yellow);
+    font-family: 'Dosis';
+    font-weight: 900;
+}
