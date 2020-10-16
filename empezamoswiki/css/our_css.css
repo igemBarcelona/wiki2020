@@ -131,15 +131,16 @@
 .inner_footer{
     display: block;
     margin: 0 auto;
-    width: 1100px;
+    width: 75%;
     height: 100%;
 }
 
 .inner_footer .logo_container{
-    width: 45%;
+    width: 35%;
     float: left;
     height: 100%;
     display: block;
+    margin-right: 15px
 }
 
 .inner_footer .logo_container img{
@@ -148,11 +149,11 @@
 }
 
 .inner_footer .footer_third{
-    width: calc(21.67% - 20px);
-    margin-right: 10px;
+    width: 17%;
+    margin-right: 5px;
     float: left;
     height: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 .inner_footer .footer_third:last-child{
@@ -160,16 +161,17 @@
 }
 
 .icon img{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 }
 
 .footer_third a .icon {
+    display: inline-block;
     position: relative;
     color: #262626;
     transition: .5s;
     z-index: 3;
-  }
+}
 
 .footer_third a:hover .icon {
     color: #fff;
@@ -182,15 +184,6 @@
     color: white;
     width: 100%;
     margin-bottom: 20px;
-}
-
-.inner_footer .footer_third a{
-    display: inline-block;
-    font-size: 18px;
-    color: grey;
-    font-weight: 200;
-    width: 30%;
-    padding-bottom: 5px;
 }
 
 .inner_footer .footer_third li{
@@ -208,6 +201,54 @@
     padding-top: 20px;
 }
 
+.inner_footer .judging{
+    width: 25%;
+    margin-right: 5px;
+    float: left;
+    height: 100%;
+    text-align: center;  
+    font-size: 18px;
+    color: white;  
+}
+
+.inner_footer .judging h1{
+    font-size: 22px;
+    display: block;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inner_footer .judging .bs table {
+    width: 100%;
+}
+
+.inner_footer .judging .gold table {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner_footer .judging a {
+    color: white;
+    font-size:  0.95rem;
+    font-weight: 300;
+}
+
+.inner_footer .judging td {
+    color: var(--dark-gray);
+    font-size:  0.95rem;
+    font-weight: 300;
+}
+
+.inner_footer .judging a:hover {
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: white;
+    font-weight: 450;
+}
+
 @media(max-width: 800px){
     .footer .inner_footer{
         width: 90%;
@@ -217,6 +258,10 @@
         width: 100%;
         margin-bottom: 30px;
         text-align: center;
+    }
+    .inner_footer .judging table{
+        width: 50%;
+        margin-left: 27%;
     }
 }
 
