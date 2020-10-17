@@ -99,7 +99,8 @@
                           Human Practices
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="humanpractices.html">Integrated Human Practices</a>
+                          <a class="dropdown-item" href="humanpractices.html">Human Practices</a>
+                          <a class="dropdown-item" href="humanpractices.html">Integrated Human</a>
                           <a class="dropdown-item" href="publicengagement.html">Public Engagement</a>
                           <a class="dropdown-item" href="contribution.html">Contribution</a>
                         </div>
@@ -153,153 +154,196 @@
           <li><a href="#inspiration">Inspiration</a></li>
           <li><a href="#foundations">Main foundations</a></li>
           <li><a href="#electronics">Electronic module</a></li>
-          <li><a href="#ref">References</a></li>
+          <li><a href="#fluidic">Complete fluidic system</a></li>
         </ul>
     </div>
 
   
    
 
-      <section class="page-section" id="description-section">
+  <section class="page-section" id="description-section">
 
-        <div class="collaboration">
-            <h1 class="display-4" id="engineering" data-aos="flip-down">Engineering aim</h1>
-            <h4>What is the engineering aim of our turbidostat?</h4>
-        </div>
-        <br>
-        <div class="row">
-          <img class="col-xl-6 col-lg-5 col-md-12 col-sm-12" src="img/lactone_circuit.png" alt="...">
-          <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
-            <p>In order to perform a long-lasting in vitro demonstration of our proof of concept feedback system we constructed a turbidostat. This culture device ensures that the experiment conditions (cell density, temperature…) are constant over time. Meaning that we need to keep a constant concentration on the producer and the reporter cells, as changes in the OD would affect the relation between lactone and sfGFP concentrations and, therefore, feedback could not be achieved in a consistent way.</p>
+  <!--------------------------------------------------- Engineering aim ------------------------------------------->
+    <div data-aos="fade-up">  
+            <div class="collaboration">
+                <h1 class="display-4" id="engineering">Engineering aim</h1>
+                <h4>What is the engineering aim of our turbidostat?</h4>
+            </div>
+            <br>
+            <div class="row">
+              <img class="col-xl-6 col-lg-5 col-md-12 col-sm-12" src="img/lactone_circuit.png" alt="...">
+              <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
+                <p>In order to perform a long-lasting in vitro demonstration of our proof of concept feedback system we constructed a turbidostat. This culture device ensures that the experiment conditions (cell density, temperature…) are constant over time. Meaning that we need to keep a constant concentration on the producer and the reporter cells, as changes in the OD would affect the relation between lactone and sfGFP concentrations and, therefore, feedback could not be achieved in a consistent way.</p>
+            </div>
+    </div>
+          
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+
+<!--------------------------------------------------- Inspiration ------------------------------------------->
+    <div data-aos="fade-up">
+            <div class="collaboration">
+                <h1 class="display-4" id="inspiration">Inspiration</h1>
+                <h4>Where the inspiration for our turbidostat came from? </h4>
+            </div>
+
+            <p>Living organisms exist in complex environments, which have certain conditions that favor their correct growth. Automated cell growth systems are capable of mimicking these conditions by adjusting variables such as temperature or Optical Density (OD) in order to maintain constant growth rates. Among them, there are DIY turbidostats such as the eVOLVER that are composed of open-source wetware, hardware and software. In particular, our hardware design is inspired by the eVolver multi modular platform. </p>
+            <p>Maintaining the OD at a constant value is a key factor in these systems because it allows to have a rigorous and precise control of the living organisms inside, while not letting the cells get saturated and limited by the available resources.</p>
+    </div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+
+<!--------------------------------------------------- Main foundations ------------------------------------------->
+    <div data-aos="fade-up">
+          <div class="collaboration">
+              <h1 class="display-4" id="foundations">Main foundations</h1>
+              <h4>What are the main foundations of our turbidostat?</h4>
           </div>
-        </div>
 
-        <div class="spacer"></div>
-        <div class="spacer"></div>
+          <img class="center" style="width: 60%" src="img/hardware/turbidostat.png" atr="">
+          <p>Our hardware design (inspired by eVolver) mainly contains 3 modules:</p>
 
-        <div class="collaboration">
-            <h1 class="display-4" id="inspiration" data-aos="flip-down">Inspiration</h1>
-            <h4>Where the inspiration for our turbidostat came from? </h4>
-        </div>
-
-        <p>Living organisms exist in complex environments, which have certain conditions that favor their correct growth. Automated cell growth systems are capable of mimicking these conditions by adjusting variables such as temperature or Optical Density (OD) in order to maintain constant growth rates. Among them, there are DIY turbidostats such as the eVOLVER that are composed of open-source wetware, hardware and software. In particular, our hardware design is inspired by the eVolver multi modular platform. </p>
-        <p>Maintaining the OD at a constant value is a key factor in these systems because it allows to have a rigorous and precise control of the living organisms inside, while not letting the cells get saturated and limited by the available resources.</p>
-  
-        <div class="spacer"></div>
-        <div class="spacer"></div>
-
-        <div class="collaboration">
-            <h1 class="display-4" id="foundations" data-aos="flip-down">Main foundations</h1>
-            <h4>What are the main foundations of our turbidostat?</h4>
-        </div>
-
-        <img class="center" style="width: 60%" src="img/hardware/turbidostat.png" atr="">
-        <p>Our hardware design (inspired by eVolver) mainly contains 3 modules:</p>
-
-
+          <div class="text-segment-select">
+            <div class="text-segment-select-item box-anim" id="select-sleeve" style="background-color: #e1e1e1;">
+                <h2 style="color: rgb(86, 173, 119);">Sleeve</h2>
+            </div>
+            <div class="text-segment-select-item box-anim" id="select-fluidic">
+                <h2 style="color: #00aad4ff;">Fluidic module</h2>
+            </div>
+            <div class="text-segment-select-item box-anim" id="select-electronic">
+                <h2 style="color:  #ffcc00ff;">Electronics module</h2>
+            </div>
+          </div>
         
-
-        <button class="accordion"><h5>Sleeve</h5></button>
-        <div class="panel bg-light">
-            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
-        </div>
-        <button class="accordion"><h5>Fluidic module</h5></button>
-        <div class="panel bg-light">
-            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
-        </div>
-        <button class="accordion"><h5>Electronic module</h5></button>
-        <div class="panel bg-light">
-            <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
-        </div>
-
+    
+          <section id="select-sleeve-2" class="text-segment-section">
+              <h2>Sleeve</h2>
+              <p>When it comes to the first one of these three modules, the sleeve, it can be more deeply detailed attending to its four components. First of all, in order to accomplish the optimal temperature requirements of a cell culture to grow properly (about 37º C) an aluminum tube is included with the aim of transmitting heat from the external thick film heating resistors to the glass vial. Aluminum alloy 6060-T6 is chosen as the material for the tube due to its high thermal conductivity (~209 W/m*K). Moreover, a 3D-printed piece is placed ringing the bottom part of the tube, its function is to house the 600 nm LED and its respective photodiode, both needed to know the optical density (OD) of the culture inside the vial. These two components are located in tunnels through the piece aiming to avoid as much external visible light as possible which would entail interferences in the signal received by the photodiode. Furthermore, a 12V computer fan is placed at the bottom part of the sleeve, this component is dedicated to keep the density of the cells homogeneous into the culture so that the values obtained for the OD are representative. To do so a stirring magnet is introduced into the vial and two small disc magnets are glued at the top of the fan, therefore when the fan starts spinning the culture inside the vial also spins thanks to the stirring magnet. Finally, a double methacrylate layer between the fan and the tube with the vial separates the disc magnets from the bottom of the vial to avoid friction when the fan is switched on.</p>
+          </section> 
+        
+          <section style="display:none;" id="select-fluidic-2" class="text-segment-section">
+            <h2>Fluidic module</h2>
+            <p>Regarding the fluidic module, it is based on DC peristaltic pumps which are perfect for the distribution of LB with or without cells because the liquid inside the tubes is never in contact with the pump thus avoiding contaminations. Obviously, this module is devoted to the distribution of the liquids to keep an accurate OD (which will be set by the user) along time. Therefore, LB can be poured in with one of the peristaltic pumps to dilute the sample and culture can be pumped out to maintain the volume at a constant level with a different pump. To do so the waste pump, which is the one in charge of keeping volume constant, is fixed at a certain height of the vial, avoiding then that the content of the sample exceeds the 14 mL at which experiments are performed.</p>
+          </section>
+    
+          <section style="display: none" id="select-electronic-2" class="text-segment-section">
+              <h2>Electronics module</h2>
+              <p>Finally, the electronics module together with the software part plays an essential role in the synchronization of the whole turbidostat. Information about this last unit can be found in the <a href="#electronics">Electronic module</a></p>
+          </section>
+    </div>
+        
         <div class="spacer"></div>
         <div class="spacer"></div>
 
+
+<!--------------------------------------------------- Electronics module ------------------------------------------->
+    <div data-aos="fade-up">
         <div class="collaboration">
-            <h1 class="display-4" id="electronics" data-aos="flip-down">Electronic module</h1>
+            <h1 class="display-4" id="electronics">Electronics module</h1>
             <h4>What about the electronic module?</h4>
         </div>
         <p>In this section a more detailed description of the circuits used for the management of the turbidostat can be found. Each subsection contains a schematic image and a brief description of the components. It has to be taken into account that despite images here show a breadboard for the circuit integration, in the real implementation of the turbidostat stripboards are also used.</p>
 
-        <img class="center" src="img/hardware/fan.png" atr="">
-    </section>
+        <h4>Fan circuit</h4><br>
+        <img class="center" src="img/hardware/fan.png" atr=""><br>
+        <p>This first image shows the simplest circuit, which is just the fan directly connected to one of the Pulse Width Modulation (PWM) outputs of the Arduino. PWM allows the user to create analog outputs going from 0 to 5 V by introducing a digit from 0 to 255, in this case since we do not need a really high power to move the fan at a speed that makes the stirring magnet rotate no external voltage source is demanded. In fact, the analog digit used is 200, which implies using around 3.9 V. For our implementation the Qualtek FAD1-04020CBHW11 12 VDC computer fan is used.</p>
+    
+        <div class="spacer"></div>
+
+        <h4>Led-photodiode circuit</h4><br>
+        <img class="center" src="img/hardware/led1.png" atr=""><br>
+        <p>This circuit like the one of the LED & Photodiode contains two different parts which are electronically independent but functionally correlated. 
+          Regarding the right breadboard which is the one that has to do with the heating resistors, they are connected in series and their power is regulated by a transistor. The left pin of the transistor is the gate, being therefore connected to one of the PWM Arduino outputs. The right pin is the source, which is directly connected to ground. Finally, the middle pin . Of course the order of the pins can vary depending on the transistor, the one that has been used for our project is a MOSFET IRL540N.
+        </p>
+
+        <div class="spacer"></div>
+
+        <h4>Thermistor-heating resistors circuit</h4><br>
+        <img class="center" src="img/hardware/heat.png" atr="">
+
+        <div class="spacer"></div>
+
+        <h4>Peristaltic pumps circuit</h4><br>
+        <img class="center" src="img/hardware/pumps.png" atr="">
+        <br>
+    
+    
+    </div>
+
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+
+
+<!--------------------------------------------------- Complete fluidic system -------------------------------------------> 
+    <div data-aos="fade-up">
+        <div class="collaboration">
+            <h1 class="display-4" id="fluidic">Complete fluidic system</h1>
+            <h4>Is the development of a turbidostat the final step?</h4>
+        </div>
+
+        <p>No, not at all, the final goal is to build a whole circuit of connections in order to prove the proper functioning of the feedback loop, however due to several constraints (time, pandemics situation etc.) this has not been possible. Ideally the hardware part should contain two turbidostats and another structure for sensing, thus one turbidostat would contain a culture of the producer cells and the other a culture of the reporter cells (please for further details about the cells visit <a href="proofofconcept.html">proof of concept</a>). These two turbidostats would be connected via peristaltic pumps with the third structure, which would receive lactone from the turbidostat of the producer cells and reporter cells from the other turbidostat. Since reporter cells produce sfGFP in the presence of lactone the third structure would be devoted to sense this light and close the loop regulating the lactone to be produced. The amount of lactone can be induced by adding more or less arabinose to the producer cells or also by adding glucose that acts as a suppressor.</p>
+        <p>A sketch of the proposed implementation can be found below.</p>
+
+        <img width=100% src="img/hardware/fluidic_system.png" atr="">
+    </div> 
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+
+
+
+  </section>
+
+
+
+
 
 
               <!-- Footer -->
 
       <div class="footer" id="footer_id">
         <div class="inner_footer">
-          <div class="logo_container">
-              <img src="img/logo_footer.png">
-          </div>
-
-          <div class="footer_third">
-              <h1>FOLLOW US</h1>
-              <a href="https://www.instagram.com/igembarcelona/">
-                  <div class="icon">
-                      <img src="img/instagram.png">
-                  </div>
-              </a>
-              <a href="https://twitter.com/igembarcelona?lang=gl">
-                  <div class="icon">
-                      <img src="img/twitter.png">
-                  </div>
-              </a>
-              <a href="https://www.twitch.tv/igem_upf">
-                  <div class="icon">
-                      <img src="img/twitch.png">
-                  </div>
-              </a>
-          </div>
-
-          <div class="footer_third">
-              <h1>CONTACT US</h1>
-              <li>igem@upf.edu</li>
-              <span>
-                  PRBB Building <br>
-                  Doctor Aiguader, 88 <br>
-                  08003 Barcelona <br>
-              </span>
-          </div>
-
-          <div class="judging">
-            <h1>JUDGING</h1>
-            <div class="bs">
-              BRONZE
-              <table>
-                <tr> 
-                  <td><a href="">Attributions</a></td>
-                  <td><a href="">Project description</a></td>
-                  <td><a href="">Contributions</a></td>
-                </tr>
-              </table>
-              SILVER
-              <table>
-                <tr> 
-                  <td><a href="">Engineering</a></td>
-                  <td><a href="">Collaborations</a></td>
-                  <td><a href="">Implementation</a></td>
-                </tr>
-              </table>
-              <table>
-                <tr>
-                  <a href="">Human practices</a>
-                </tr>
-              </table>  
+            <div class="logo_container">
+                <img src="img/logo_footer.png">
             </div>
-            <div class="gold">
-              GOLD
-              <table>
-                <tr> 
-                  <td><a href="">Model</a></td>
-                  <td><a href="">Proof of concept</a></td>
-                  <td><a href="">Education</a></td>
-                </tr>
-              </table>
+
+            <div class="footer_third">
+                <h1>FOLLOW US</h1>
+                <a href="https://www.instagram.com/igembarcelona/">
+                    <div class="icon">
+                        <img src="img/instagram.png">
+                    </div>
+                </a>
+                <a href="https://twitter.com/igembarcelona?lang=gl">
+                    <div class="icon">
+                        <img src="img/twitter.png">
+                    </div>
+                </a>
+                <a href="https://www.twitch.tv/igem_upf">
+                    <div class="icon">
+                        <img src="img/twitch.png">
+                    </div>
+                </a>
             </div>
-          </div>   
+
+            <div class="footer_third">
+                <h1>CONTACT US</h1>
+                <li>igem@upf.edu</li>
+                <span>
+                    PRBB Building <br>
+                    Doctor Aiguader, 88 <br>
+                    08003 Barcelona <br>
+                </span>
+            </div>
+
+            
         </div>
-      </div>
+
     </div>
       
         <!-- Bootstrap core JS-->
