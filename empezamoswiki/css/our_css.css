@@ -131,16 +131,15 @@
 .inner_footer{
     display: block;
     margin: 0 auto;
-    width: 75%;
+    width: 1100px;
     height: 100%;
 }
 
 .inner_footer .logo_container{
-    width: 35%;
+    width: 45%;
     float: left;
     height: 100%;
     display: block;
-    margin-right: 15px
 }
 
 .inner_footer .logo_container img{
@@ -149,11 +148,11 @@
 }
 
 .inner_footer .footer_third{
-    width: 17%;
-    margin-right: 5px;
+    width: calc(21.67% - 20px);
+    margin-right: 10px;
     float: left;
     height: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
 .inner_footer .footer_third:last-child{
@@ -161,17 +160,16 @@
 }
 
 .icon img{
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
 }
 
 .footer_third a .icon {
-    display: inline-block;
     position: relative;
     color: #262626;
     transition: .5s;
     z-index: 3;
-}
+  }
 
 .footer_third a:hover .icon {
     color: #fff;
@@ -184,6 +182,15 @@
     color: white;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.inner_footer .footer_third a{
+    display: inline-block;
+    font-size: 18px;
+    color: grey;
+    font-weight: 200;
+    width: 30%;
+    padding-bottom: 5px;
 }
 
 .inner_footer .footer_third li{
@@ -201,54 +208,6 @@
     padding-top: 20px;
 }
 
-.inner_footer .judging{
-    width: 25%;
-    margin-right: 5px;
-    float: left;
-    height: 100%;
-    text-align: center;  
-    font-size: 18px;
-    color: white;  
-}
-
-.inner_footer .judging h1{
-    font-size: 22px;
-    display: block;
-    color: white;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.inner_footer .judging .bs table {
-    width: 100%;
-}
-
-.inner_footer .judging .gold table {
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.inner_footer .judging a {
-    color: white;
-    font-size:  0.95rem;
-    font-weight: 300;
-}
-
-.inner_footer .judging td {
-    color: var(--dark-gray);
-    font-size:  0.95rem;
-    font-weight: 300;
-}
-
-.inner_footer .judging a:hover {
-    text-decoration: none;
-    font-size: 0.95rem;
-    color: white;
-    font-weight: 450;
-}
-
 @media(max-width: 800px){
     .footer .inner_footer{
         width: 90%;
@@ -258,10 +217,6 @@
         width: 100%;
         margin-bottom: 30px;
         text-align: center;
-    }
-    .inner_footer .judging table{
-        width: 50%;
-        margin-left: 27%;
     }
 }
 
@@ -293,6 +248,10 @@
 
 .toc_container li, .toc_container ul, .toc_container ul li{
     list-style: outside none none !important;
+}
+
+.toc_list ul {
+    margin-left: 1.5em;
 }
 
 .toc_container a {
@@ -1043,4 +1002,48 @@ header.masthead3 {
     color: var(--logo-yellow);
     font-family: 'Dosis';
     font-weight: 900;
+}
+
+
+
+/* --------------------------------------------- HARDWARE & SOFTWARE ----------------------------------------------- */
+
+.text-segment-select {
+    width: 100%;
+    height: 70px;
+    margin: 20px 0px 40px 0px;
+}
+
+.text-segment-select h2 {
+    position: relative;
+    font-weight: 400 !important;
+    font-size: 1.7rem !important;
+    padding-top: 1.2rem;
+    line-height: 1.8rem !important;
+}
+
+.text-segment-select-item {
+    display: inline;
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    height: 70px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text-segment-section {
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #e1e1e1;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+#select-fluidic-2 li, #select-electronic-2 li {
+    list-style-type: disc !important;
+    padding-left:0.2em !important;
+    margin-left:2em;
 }
