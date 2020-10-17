@@ -122,6 +122,38 @@
     });
 
 
+        //Text segment select functionality
+        $(".text-segment-select-item").on('click', function (event) {
+
+            var selectID = $(this).attr('id');
+            $(".text-segment-select-item").css({'background-color': '#f1f1f1'});
+            
+            if (selectID == "select-sleeve") {
+                $("#select-sleeve").css({'background-color': '#e1e1e1'});
+                
+                $("#select-sleeve-2").show();
+                $("#select-fluidic-2").hide();
+                $("#select-electronic-2").hide();
+                
+            } else if (selectID == "select-fluidic") {
+                $("#select-fluidic").css({'background-color': '#e1e1e1'});
+                
+                $("#select-sleeve-2").hide();
+                $("#select-fluidic-2").show();
+                $("#select-electronic-2").hide();
+                
+            } else if (selectID == "select-electronic") {
+                $("#select-electronic").css({'background-color': '#e1e1e1'});
+                
+                $("#select-sleeve-2").hide();
+                $("#select-fluidic-2").hide();
+                $("#select-electronic-2").show();
+                
+            }
+            
+            AOS.refresh();
+    
+        });
 
 
 })(jQuery); // End of use strict
